@@ -1,19 +1,22 @@
 <template>
   <div class="app" :class="mode">
   <Header :mode="mode" @toggle="toggle" />
-  
+  <!-- <Content :mode="mode" /> -->
+  <router-view/>
   </div>
 
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  
-  <router-view/>
+  <!-- <nav>
+    <router-link :mode="mode"  to="/">Home</router-link> |
+    <router-link :mode="mode"  to="/about">About</router-link>
+  </nav> -->
+
+ 
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import Content from '@/components/Content.vue'
+
 
 export default {
   name: 'app',
@@ -24,8 +27,20 @@ export default {
   },
   components: {
     Header,
+    Content,
   },
+
+  created () {
+    window.addEventListener('keyup', this.keyPress)
+  },
+
   methods: {
+    keyPress (e) {
+      if (e.key === 'd') {
+        this.toggle()
+      }
+    },
+
     toggle () {
       if (this.mode === "dark") {
         this.mode = "light"
@@ -43,18 +58,20 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;   // Need to change to Montserrat
+    font-family: 'Montserrat', sans-serif;
+  
 }
 .app {
   width: 100vw;
   min-height: 100vh;
+  margin: 5px;
   background: #F3F3F3;
   color: #15202B;
   transition: background 0.3s ease-in-out;
 }
 .dark {
   background: #192734;
-  color: #F3F3F3;
+  color: #E8E8E8;
 }
 // #app {
 //   font-family: Avenir, Helvetica, Arial, sans-serif;

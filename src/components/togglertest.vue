@@ -11,7 +11,7 @@
 
 
 
-<style scoped>
+<style lang="scss">
 
 
 /* The switch - the box around the slider */

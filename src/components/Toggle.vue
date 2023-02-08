@@ -17,12 +17,16 @@ export default {
 }
 </script>
 
-<style scope lang="scss">
+<style lang="scss">
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
 .toggle {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    padding-right: 20px;
     
 }
 .toggle input {
@@ -34,8 +38,8 @@ export default {
     position: absolute;
     cursor: pointer;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     bottom: 0;
     background: #15202B;
     -webkit-transition: .4s;
@@ -52,6 +56,7 @@ export default {
     background: #FFF;
     -webkit-transition: .4s;
     transition: .4s;
+    right: 10px;
 }
 input:checked + .toggler {
     background: #2196F3;
@@ -66,7 +71,7 @@ input:checked + .toggler:before {
 }
 .toggler.round {
     border-radius: 34px;
-
+    // right: 10px;
 }
 .toggler.round:before {
     border-radius: 50%;
