@@ -1,5 +1,5 @@
 {
-  "name": "leobardo-martinez",
+  "name": "Leobardo Martinez",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,3 +19,4 @@
     "sass-loader": "^12.0.0"
   }
 }
+
