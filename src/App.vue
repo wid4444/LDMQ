@@ -22,7 +22,7 @@ export default {
   name: 'app',
   data () {
     return {
-      mode: 'light'
+      mode: 'dark'
     }
   },
   components: {
@@ -65,13 +65,13 @@ export default {
   width: 100vw;
   min-height: 100vh;
   margin: 5px;
-  background: #F3F3F3;
-  color: #15202B;
+  background: #f3f3f3;
+  color: #343A40;
   transition: background 0.3s ease-in-out;
 }
 .dark {
-  background: #192734;
-  color: #E8E8E8;
+  background: #0a0a0a;
+  color: #DEE2E6;
 }
 // #app {
 //   font-family: Avenir, Helvetica, Arial, sans-serif;

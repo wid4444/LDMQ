@@ -52,7 +52,7 @@ header {
   transition: background 0.3s ease-in-out;
 }
 .dark header {
-  background: #15202B;
+  background: #1d1d1d;
 }
 header h1 {
   font-size: 15px;
@@ -71,7 +71,8 @@ header nav .nav-link {
   align-items: center;
   padding: 0px 15px;
   text-decoration: none;
-  color: #15202B;
+  color: #212529;
+  font-weight: 600;
   // border: 1px solid black;
   border-radius: 5px;
   margin: 5px;

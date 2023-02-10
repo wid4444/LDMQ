@@ -59,10 +59,10 @@ export default {
     right: 10px;
 }
 input:checked + .toggler {
-    background: #2196F3;
+    background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
 }
 input:focus + .toggler {
-    box-shadow: 0 0 2px #2196F3;
+    box-shadow: 0 0 2px #721ef0;
 }
 input:checked + .toggler:before {
     -webkit-transform: translateX(26px);
