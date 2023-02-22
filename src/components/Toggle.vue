@@ -11,11 +11,15 @@
   </div>
 </template>
 
+
+
 <script>
 export default {
     props: ['mode']
 }
 </script>
+
+
 
 <style lang="scss">
 * {
@@ -24,9 +28,10 @@ export default {
 .toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-    padding-right: 20px;
+    // SLIDING BUTTON This will make the sliding oval smaller
+    width: 30px;
+    height: 17px;
+    padding-right: 10px;
     
 }
 .toggle input {
@@ -41,7 +46,7 @@ export default {
     left: 0px;
     right: 0px;
     bottom: 0;
-    background: #15202B;
+    background: #8f07f7;
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -49,25 +54,34 @@ export default {
 .toggler:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    // SLIDING BUTTON This will make the sliding button smaller
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    right: 5px;
+
     background: #FFF;
     -webkit-transition: .4s;
     transition: .4s;
-    right: 10px;
+    
+
+}
+.dark .toggler:before {
+    background: rgb(0, 0, 0);
 }
 input:checked + .toggler {
-    background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+    // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+    background: rgb(20, 240, 218);
 }
 input:focus + .toggler {
     box-shadow: 0 0 2px #721ef0;
 }
 input:checked + .toggler:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    // SLIDING BUTTON This will change the distance the slider moves
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
 }
 .toggler.round {
     border-radius: 34px;

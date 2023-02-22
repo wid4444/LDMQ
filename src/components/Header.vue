@@ -1,11 +1,22 @@
 <template>
+
     <header>
 
+        <h1>
+            Leobardo D. Martinez-Quiroz
+        </h1>
+        
         <nav>
             <router-link class="nav-link" :mode="mode" to="/">Home</router-link>
             <router-link class="nav-link" :mode="mode" to="/about">About</router-link>
-            <div class="nav-link">Portfolio</div>
-            <div class="nav-link">Contact</div>
+            <router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link>
+            <router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link>
+
+            <!-- <div class="nav-link">Portfolio</div>
+            <div class="nav-link">Contact</div> -->
+
+            <!-- <HamburgerMenu :mode="mode" /> -->
+
         </nav>
 
         <div class="color">
@@ -24,6 +35,7 @@
 // @ is an alias to /src
 import Toggle from '@/components/Toggle.vue'
 import Content from '@/components/Content.vue'
+// import HamburgerMenu from './HamburgerMenu.vue'
 
 
 export default {
@@ -31,11 +43,14 @@ props: ['mode'],
 components: {
   Toggle,
   Content,
+//   HamburgerMenu,
 
   
 }
 }
 </script>
+
+
 
 <style scope lang="scss">
 * {
@@ -55,10 +70,16 @@ header {
   background: #1d1d1d;
 }
 header h1 {
+    font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+//   text-transform: uppercase;
+//   font-weight: 600;
+  margin-left: 20px;
+
+}
+.color h1 {
+    margin-right: 20px;
   text-transform: uppercase;
-  font-weight: 600;
-  margin-right: 20px;
 
 }
 header nav {

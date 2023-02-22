@@ -1,21 +1,23 @@
 <template>
   <div class="app" :class="mode">
-  <Header :mode="mode" @toggle="toggle" />
+
+  <!-- <Header :mode="mode" @toggle="toggle" /> -->
+<!-- <Hamburger :mode="mode" @toggle="toggle" /> -->
+  <HamburgerMenu :mode="mode" @toggle="toggle" />
+  
   <!-- <Content :mode="mode" /> -->
   <router-view/>
+
+
   </div>
 
-  <!-- <nav>
-    <router-link :mode="mode"  to="/">Home</router-link> |
-    <router-link :mode="mode"  to="/about">About</router-link>
-  </nav> -->
-
- 
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Content from '@/components/Content.vue'
+import HamburgerMenu from './components/HamburgerMenu.vue'
+import Hamburger from './components/Hamburger.vue'
 
 
 export default {
@@ -28,6 +30,8 @@ export default {
   components: {
     Header,
     Content,
+    HamburgerMenu,
+    Hamburger,
   },
 
   created () {
