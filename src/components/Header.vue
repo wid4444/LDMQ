@@ -1,12 +1,22 @@
 <template>
 
-    <header>
+<div class="color">
+            <h1>{{ mode }} Mode</h1>
 
-        <h1>
+            <div class="toggle">
+                <Toggle :mode="mode" @toggle="$emit('toggle')" />
+            </div>
+        </div>
+
+    <header>
+      
+
+        <!-- <h1>
             Leobardo D. Martinez-Quiroz
-        </h1>
+        </h1> -->
         
-        <nav>
+        <div class="nav-links">
+          <nav>
             <router-link class="nav-link" :mode="mode" to="/">Home</router-link>
             <router-link class="nav-link" :mode="mode" to="/about">About</router-link>
             <router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link>
@@ -16,16 +26,23 @@
             <div class="nav-link">Contact</div> -->
 
             <!-- <HamburgerMenu :mode="mode" /> -->
+          </nav>
+          </div>
 
-        </nav>
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-burger"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li><router-link class="nav-link" :mode="mode" to="/">Home</router-link></li>
+    <li><router-link class="nav-link" :mode="mode" to="/about">About</router-link></li>
+    <li><router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link></li>
+    <li><router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link></li>
 
-        <div class="color">
-            <h1>{{ mode }} Mode</h1>
+  </ul>
+</div>
 
-            <div class="toggle">
-                <Toggle :mode="mode" @toggle="$emit('toggle')" />
-            </div>
-        </div>
+        
 
     </header>
 </template>
@@ -53,33 +70,87 @@ components: {
 
 
 <style scope lang="scss">
+.btn {
+
+  color: blue;
+}
+
+.fa-burger {
+  color: #9D4EDD;
+  font-size: 35px;
+  text-shadow:1px 1px #E0AAFF;
+  
+  // filter:drop-shadow(20px 10px 1px red)
+
+  // text-shadow: 1px 6px rgba(255,0,0,.5)
+
+// box-shadow:0 .5rem 1rem 0 rgb(224, 170, 255),0 .375rem 1.25rem 0 rgb(199, 125, 255)
+}
+.dark .fa-burger {
+  
+  color: rgb(20, 240, 57);
+  text-shadow: none;
+}
+
+.dropdown {
+  display: none;
+}
+.color {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 10px;
+}
+.toggle {
+  // margin-right: 40px;
+  
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: opx 25px;
+  padding: 0px 25px;
+  margin: 0px 20px;
   height: 60px;
-  background: #C3C3C3;
+  border-radius: 5px;
+  background: #CED4DA;
   transition: background 0.3s ease-in-out;
 }
 .dark header {
-  background: #1d1d1d;
+  background: #343A40;
 }
 header h1 {
-    font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-//   text-transform: uppercase;
-//   font-weight: 600;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  // text-transform: uppercase;
+  font-weight: 600;
+  // margin-left: 0px;
+  margin: 0;
+  color: #9D4EDD;
+  // font-family: 'Gajraj One', sans-serif;
+font-family: 'Handlee', sans-serif;
+// font-family: 'Italianno', sans-serif;
+// font-family: 'Montserrat', sans-serif;
 
 }
+.dark header h1 {
+color: #70E000;
+}
 .color h1 {
-    margin-right: 20px;
+    margin-right: 10px;
   text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 0;
 
 }
 header nav {
@@ -87,6 +158,11 @@ header nav {
   height: 50px;
   margin-left: 20px;
 }
+// .nav-links {
+//   display: flex;
+//   height: 50px;
+//   margin-left: 20px;
+// }
 header nav .nav-link {
   display: flex;
   align-items: center;
@@ -94,7 +170,6 @@ header nav .nav-link {
   text-decoration: none;
   color: #212529;
   font-weight: 600;
-  // border: 1px solid black;
   border-radius: 5px;
   margin: 5px;
 
@@ -104,19 +179,76 @@ header nav .nav-link {
   // border: white 1px solid;
 }
 header nav .nav-link:hover {
-  background: #6c757d;
+  background: #ADB5BD;
+  border: 1px solid #9D4EDD;
+
 }
 .dark header nav .nav-link:hover {
   background: #6c757d;
+  border: 0.5px solid #70E000;
+
 }
-.color {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.toggle {
-  margin-right: 40px;
+// .color {
+//     display: flex;
+//     align-items: center;
+//     // justify-content: space-around;
+// }
+// .toggle {
+//   margin-right: 40px;
   
+// }
+@media screen and (max-width: 700px) {
+
+  
+
+  .dropdown-menu .show {
+    $dropdown-dark-link-disabled-color: #ADB5BD;
+    // $dropdown-color: var(--#ADB5BD body-color);
+    background: #8f07f7;
+    padding: 0;
+  }
+
+  .dropdown-menu .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  color: #212529;
+  padding: 5px 10px;
+}
+.dropdown-menu .nav-link:hover {
+  color: #E9ECEF;
+  background: #ADB5BD;
+  margin: 0px 25px;
+  border-radius: 5px;
+border: 1px solid #9D4EDD;
+
 }
 
+
+.dark .dropdown-menu .nav-link {
+color: #212529;
+font-size: 18px;
+
+}
+.dark .dropdown-menu .nav-link:hover {
+  color: #ADB5BD;
+  background: #6C757D;
+  margin: 0px 25px;
+  border-radius: 5px;
+  border: 0.5px solid #70E000;
+
+}
+
+  .dropdown {
+  display: contents;
+  margin-right: 60px;
+}
+header nav {
+  display: none;
+}
+header h1 {
+  font-size: 25px;
+}
+}
 </style>

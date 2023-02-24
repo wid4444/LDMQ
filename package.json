@@ -1,5 +1,5 @@
 {
-  "name": "Leobardo Martinez",
+  "name": "Leobardo-Martinez",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
     "stream-http": "^3.2.0",
     "vue": "^3.2.13",
@@ -21,4 +22,3 @@
     "sass-loader": "^12.0.0"
   }
 }
-

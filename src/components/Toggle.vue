@@ -21,7 +21,7 @@ export default {
 
 
 
-<style lang="scss">
+<style scoped lang="scss">
 * {
     font-family: 'Montserrat', sans-serif;
   }
@@ -62,6 +62,7 @@ export default {
     right: 5px;
 
     background: #FFF;
+    // background-image: "fa-solid fa-moon";
     -webkit-transition: .4s;
     transition: .4s;
     
@@ -69,10 +70,12 @@ export default {
 }
 .dark .toggler:before {
     background: rgb(0, 0, 0);
+//   background: url("../assets/1821-night-sky-moon-stars-outline\ \(1\).gif") no-repeat right;
+
 }
 input:checked + .toggler {
     // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
-    background: rgb(20, 240, 218);
+    background: rgb(20, 240, 57);
 }
 input:focus + .toggler {
     box-shadow: 0 0 2px #721ef0;
