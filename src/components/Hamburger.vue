@@ -81,7 +81,7 @@ components: {
 
 
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
 
 .color {

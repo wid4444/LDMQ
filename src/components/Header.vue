@@ -1,57 +1,63 @@
 <template>
 
-<div class="color">
-            <h1>{{ mode }} Mode</h1>
+<div class="header">
+  <div class="color">
 
-            <div class="toggle">
-                <Toggle :mode="mode" @toggle="$emit('toggle')" />
-            </div>
-        </div>
+    <h1>{{ mode }} Mode</h1>
 
-    <header>
-      
+    <div class="toggle">
+      <Toggle :mode="mode" @toggle="$emit('toggle')" />
+    </div>
+  </div>
 
-        <!-- <h1>
+  <header>
+
+
+    <!-- <h1>
             Leobardo D. Martinez-Quiroz
         </h1> -->
-        
-        <div class="nav-links">
-          <nav>
-            <router-link class="nav-link" :mode="mode" to="/">Home</router-link>
-            <router-link class="nav-link" :mode="mode" to="/about">About</router-link>
-            <router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link>
-            <router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link>
 
-            <!-- <div class="nav-link">Portfolio</div>
+    <div class="nav-links">
+      <nav>
+        <router-link class="nav-link" :mode="mode" to="/">Home</router-link>
+        <router-link class="nav-link" :mode="mode" to="/about">About</router-link>
+        <router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link>
+        <router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link>
+
+        <!-- <div class="nav-link">Portfolio</div>
             <div class="nav-link">Contact</div> -->
 
-            <!-- <HamburgerMenu :mode="mode" /> -->
-          </nav>
-          </div>
+        <!-- <HamburgerMenu :mode="mode" /> -->
+      </nav>
+    </div>
 
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-burger"></i>
-  </button>
-  <ul class="dropdown-menu">
-    <li><router-link class="nav-link" :mode="mode" to="/">Home</router-link></li>
-    <li><router-link class="nav-link" :mode="mode" to="/about">About</router-link></li>
-    <li><router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link></li>
-    <li><router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link></li>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <!-- <i class="fa-brands fa-burger fa-bounce"></i>
+        <i class="fa-solid fa-burger"></i>
+        <i class="fa-solid fa-bars"></i> -->
+        <i class="fa-solid fa-bars"></i>
 
-  </ul>
+      </button>
+      <ul class="dropdown-menu">
+        <li><router-link class="nav-link" :mode="mode" to="/">Home</router-link></li>
+        <li><router-link class="nav-link" :mode="mode" to="/about">About</router-link></li>
+        <li><router-link class="nav-link" :mode="mode" to="/portfolio">Portfolio</router-link></li>
+        <li><router-link class="nav-link" :mode="mode" to="/contact">Contact</router-link></li>
+
+      </ul>
+    </div>
+
+
+
+  </header>
 </div>
-
-        
-
-    </header>
 </template>
 
 
 <script>
 // @ is an alias to /src
-import Toggle from '@/components/Toggle.vue'
-import Content from '@/components/Content.vue'
+import Toggle from './Toggle.vue'
 // import HamburgerMenu from './HamburgerMenu.vue'
 
 
@@ -59,7 +65,6 @@ export default {
 props: ['mode'],
 components: {
   Toggle,
-  Content,
 //   HamburgerMenu,
 
   
@@ -69,17 +74,41 @@ components: {
 
 
 
-<style scope lang="scss">
+<style scoped lang="scss">
+
+.fa-burger {
+  //  --fa-animation-duration: 3s;
+   --fa-animation-iteration-count: 0;
+  //  --fa-animation-timing: ease-in-out;
+}
+.fa-burger:hover {
+   --fa-animation-duration: 2s;
+   --fa-animation-iteration-count: 20;
+   --fa-animation-timing: ease-in-out;
+}
+.dropdown-toggle {
+  background: #ADB5BD;
+}
+.dark .dropdown-toggle {
+  background: #495057;
+}
+.dark .dropdown-toggle:hover {
+  background: #6C757D;
+}
 .btn {
 
-  color: blue;
+  color: #008000;
+}
+.dark .btn {
+  color: #9D4EDD;
 }
 
 .fa-burger {
   color: #9D4EDD;
   font-size: 35px;
   text-shadow:1px 1px #E0AAFF;
-  
+  // font-family: 'Open Sans', sans-serif;
+
   // filter:drop-shadow(20px 10px 1px red)
 
   // text-shadow: 1px 6px rgba(255,0,0,.5)
@@ -201,10 +230,10 @@ header nav .nav-link:hover {
 
   
 
-  .dropdown-menu .show {
+  .dropdown-menu {
     $dropdown-dark-link-disabled-color: #ADB5BD;
     // $dropdown-color: var(--#ADB5BD body-color);
-    background: #8f07f7;
+    background: #6C757D;
     padding: 0;
   }
 
@@ -227,13 +256,13 @@ border: 1px solid #9D4EDD;
 
 
 .dark .dropdown-menu .nav-link {
-color: #212529;
+color: #CED4DA;
 font-size: 18px;
 
 }
 .dark .dropdown-menu .nav-link:hover {
-  color: #ADB5BD;
-  background: #6C757D;
+  color: #212529;
+  background: #ADB5BD;
   margin: 0px 25px;
   border-radius: 5px;
   border: 0.5px solid #70E000;

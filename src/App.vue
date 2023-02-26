@@ -1,27 +1,18 @@
 <template>
-
   <div class="app" :class="mode">
 
-<!-- <DarkMode :mode="mode" @toggle="toggle" /> -->
+    <Header :mode="mode" @toggle="toggle" />
 
-  <Header :mode="mode" @toggle="toggle" />
-<!-- <Hamburger :mode="mode" @toggle="toggle" /> -->
-  <!-- <HamburgerMenu :mode="mode" @toggle="toggle" /> -->
-  
-  <!-- <Content :mode="mode" /> -->
-  <router-view/>
+    <!-- <Hamburger class="hamburger" :mode="mode" @toggle="toggle" /> -->
 
+    <router-view />
 
   </div>
-
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Content from '@/components/Content.vue'
-import HamburgerMenu from './components/HamburgerMenu.vue'
+import Header from './components/Header.vue'
 import Hamburger from './components/Hamburger.vue'
-// import DarkMode from './components/DarkMode.vue'
 
 
 export default {
@@ -33,10 +24,7 @@ export default {
   },
   components: {
     Header,
-    Content,
-    HamburgerMenu,
     Hamburger,
-    // DarkMode,
   },
 
   created () {
@@ -63,6 +51,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// .hamburger {
+// display: none;
+// }
 * {
   margin: 0;
   padding: 0;

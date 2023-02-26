@@ -1,5 +1,7 @@
 <template>
+
   <div class="toggle-wrapper">
+
     <label class="toggle">
         <input 
         type="checkbox" 
@@ -8,7 +10,9 @@
         />
         <span class="toggler round"></span>
     </label>
+
   </div>
+  
 </template>
 
 

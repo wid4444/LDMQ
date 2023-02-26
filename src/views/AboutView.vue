@@ -3,11 +3,21 @@
   <div class="about">
     <h1>This is an about page</h1>
     <!-- <div class="icons"> -->
+      <i class=" fa-brands fa-github"></i>
+      <i class=" fa-brands fa-linkedin"></i>
+    <i class=" fa-brands fa-codepen"></i>
+    <i class=" fa-brands fa-codepen"></i>
+    
+
+<br>
+<br>
+<br>
     <img class="icon" src="../assets/icons/github.svg.png" alt="">
     <img class="icon" src="../assets/icons/github1.png" alt="">
     <img class="icon" src="../assets/icons/github.png" alt="">
     <img class="icon" src="../assets/icons/github2.png" alt="">
     <img class="icon" src="../assets/icons/github3.png" alt="">
+
 <br>
     <img class="icon" src="../assets/icons/linkedin.png" alt="">
     <img class="icon" src="../assets/icons/linkedin2.png" alt="">
@@ -15,6 +25,7 @@
     <img class="icon" src="../assets/icons/linkedin3.png" alt="">
     <img class="icon" src="../assets/icons/linkedin1.png" alt="">
     <img class="icon" src="../assets/icons/linkedin4.webp" alt="">
+    
 
 <br>
     <img class="icon" src="../assets/icons/gitlab0.png" alt="">
@@ -79,29 +90,15 @@
   <span v-if="disabled">This feature is disabled!</span>
 </div>
 
-
-
   <!-- </div> -->
-
-
-
-
-
-
-    
-
-
-<togglertest/>
-
   </div>
 </template>
 
 <script>
 
-import togglertest from '../components/togglertest.vue'
 export default {
   components: {
-    togglertest,
+    
   },
 
   data() {
@@ -121,7 +118,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+.fa-brands {
+  font-size: 150px;
+  background: none;
+  // box-shadow: 10px 7px white;
+}
+.fa-brands:hover {
+  text-shadow: 20px 20px 20px  #70E000 ;
+  
+}
 .icon {
   width: 150px;
   /* height: 200px; */

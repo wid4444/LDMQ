@@ -1,7 +1,7 @@
 <template>
-  <div class="content">
+  <!-- <div class="content"> -->
       <!-- <h3>This is {{ mode }} mode</h3> -->
-      <div class="image-grid">
+      <!-- <div class="image-grid"> -->
           <!-- <div class="col">
           <img src="../assets/logo.png" alt="Portfolio Image">
       </div> -->
@@ -14,19 +14,16 @@
 
 
               <p class="para">
-                  I am a Jr. Software Developer Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+                  I am a Jr. Frontend focused Software Developer building the Frontend of Websites. I like design and 
               </p>
               <!-- <img src="../assets/logo.png" alt="Portfolio Image"> -->
           </div>
           </div>
-          <!-- <div class="col">
-          <img src="../assets/logo.png    " alt="Portfolio Image">
+          
 
-      </div> -->
+      <!-- </div> -->
 
-      </div>
-
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -107,13 +104,74 @@ color: #DEE2E6;
 .title h3 {
 color: #DEE2E6;
 font-weight: 600;
+// Start of the underline
+display: block;
+  position: relative;
+  padding: 0.2em 0;
 
+  overflow: hidden;
 }
+.title h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #38B000;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+.title h3:hover::after,
+.title h3:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+.title h3::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+.title h3:hover::after,
+.title h3:focus::after {
+      transform: translate3d(0, 0, 0);
+    }
+// End of the underline in Light mode
 .dark .title h3 {
   color: #DEE2E6;
   font-weight: 600;
+// Start of the underline
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+
+  overflow: hidden;
 
 }
+.dark .title h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #7B2CBF;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+.dark .title h3:hover::after,
+.dark .title h3:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+.dark .title h3::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+  .dark .title h3:hover::after,
+  .dark .title h3:focus::after {
+      transform: translate3d(0, 0, 0);
+    }
+// End of the underline
 .title h1, h3, p {
   margin: 20px;
 }
@@ -158,36 +216,36 @@ opacity: 85%;
 
   // background-attachment: local;
 }
-@media screen and (max-width:1024px) {
-  .col {
-      height: 500px;
-  }
-  .title {
-      height: 500px;
-  }
+// @media screen and (max-width:1024px) {
+//   .col {
+//       height: 500px;
+//   }
+//   .title {
+//       height: 500px;
+//   }
   
-}
+// }
 
-@media screen and (max-width:700px) {
-  .col {
-      height: 300px;
-  }
-  .title {
-      height: 620px;
-      top: 40px;
-  }
-  .title h1 {
-    font-size: 30px;
-    margin: 10px;
-  }
-  .title h3 {
-    font-size: 20px;
-    margin: 10px;
+// @media screen and (max-width:700px) {
+//   .col {
+//       height: 300px;
+//   }
+//   .title {
+//       height: 620px;
+//       top: 40px;
+//   }
+//   .title h1 {
+//     font-size: 30px;
+//     margin: 10px;
+//   }
+//   .title h3 {
+//     font-size: 20px;
+//     margin: 10px;
 
-  }
-  .para {
-      margin: 10px;
-  }
+//   }
+//   .para {
+//       margin: 10px;
+//   }
   
-}
+// }
 </style>
