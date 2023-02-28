@@ -1,36 +1,34 @@
 <template>
-  <!-- <div class="content"> -->
-      <!-- <h3>This is {{ mode }} mode</h3> -->
-      <!-- <div class="image-grid"> -->
-          <!-- <div class="col">
-          <img src="../assets/logo.png" alt="Portfolio Image">
-      </div> -->
-          <div class="col">
+  <div class="home">
+    <div class="pic">
 
-              <div class="title">
+    <div class="title">
 
-                <h3>Hi, my name is</h3>
-                <h1>Leobardo D. Martinez-Quiroz</h1>
+      <h3>Hi, my name is</h3>
+      <h1>Leobardo D. Martinez-Quiroz</h1>
 
-
-              <p class="para">
-                  I am a Jr. Frontend focused Software Developer building the Frontend of Websites. I like design and 
-              </p>
-              <!-- <img src="../assets/logo.png" alt="Portfolio Image"> -->
-          </div>
-          </div>
-          
-
-      <!-- </div> -->
-
-  <!-- </div> -->
+      <p class="para">
+        I am a Jr. Frontend focused Software Developer building the Frontend of Websites. I like design and
+      </p>
+      <!-- <img src="../assets/logo.png" alt="Portfolio Image"> -->
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
+
+
 export default {
-  props: ['mode']
+  props: ['mode'],
+  components: {
+    
+  }
 
 }
+
+
+
 </script>
 
 <style scoped lang="scss">
@@ -89,11 +87,18 @@ color: #DEE2E6;
   text-shadow:5px 5px #C77DFF;
   font-size: 60px;
 
-  // font-family: 'Tilt Prism', sans-serif;
-  font-family: 'Gajraj One', sans-serif;
-// font-family: 'Handlee', sans-serif;
-// font-family: 'Italianno', sans-serif;
+  // font-family: 'Gajraj One', cursive;
+// font-family: 'Handlee', cursive;
+// font-family: 'Italianno', cursive;
 // font-family: 'Montserrat', sans-serif;
+// font-family: 'Poller One', cursive;
+// font-family: 'Press Start 2P', cursive;
+// font-family: 'Rubik Moonrocks', cursive;
+// font-family: 'Tilt Prism', cursive;
+// font-family: 'Titan One', cursive;
+font-family: 'Ultra', serif;
+// font-family: 'UnifrakturMaguntia', cursive;
+
 }
 .dark .title h1 {
   color: rgb(20, 240, 57);
@@ -199,18 +204,25 @@ opacity: 85%;
 .dark .para {
   color: #DEE2E6;
 }
-.col {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  // height needs to be change when cell phone sizing
-  height: 600px;
-  background: url("../assets/LDM3.JPG") no-repeat right;
-  background-size: 100% auto;
+  
+  // background: url("../assets/LDM3.JPG") no-repeat right;
+  // background-size: 100% auto;
   // background-attachment: local;
 }
-.dark .col {
+.pic {
+  width: 100%;
+  // Height needs to be change when cell phone sizing !important
+  height: 800px;  
+  background: url("../assets/LDM3.JPG") no-repeat right;
+  background-size: 100% auto;
+  margin: 20px;
+  border-radius: 5px;
+}
+.dark .pic {
   background: url("../assets/LDM4.JPG") no-repeat right;
   background-size: 100% auto;
 
@@ -226,26 +238,27 @@ opacity: 85%;
   
 // }
 
-// @media screen and (max-width:700px) {
-//   .col {
-//       height: 300px;
-//   }
-//   .title {
-//       height: 620px;
-//       top: 40px;
-//   }
-//   .title h1 {
-//     font-size: 30px;
-//     margin: 10px;
-//   }
-//   .title h3 {
-//     font-size: 20px;
-//     margin: 10px;
+@media screen and (max-width:700px) {
+  // .home {
+  //     height: 300px;
+  // }
+  .title {
+      height: 620px;
+      top: 40px;
+  }
+  .title h1 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .title h3 {
+    font-size: 20px;
+    margin: 10px;
 
-//   }
-//   .para {
-//       margin: 10px;
-//   }
+  }
+  .para {
+      margin: 10px;
+      max-width: 480px;
+  }
   
-// }
+}
 </style>

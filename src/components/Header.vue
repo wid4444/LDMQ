@@ -33,10 +33,10 @@
 
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <!-- <i class="fa-brands fa-burger fa-bounce"></i>
-        <i class="fa-solid fa-burger"></i>
-        <i class="fa-solid fa-bars"></i> -->
+        <i class="fa-solid fa-burger fa-bounce"></i>
+        <!-- <i class="fa-solid fa-burger"></i>
         <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i> -->
 
       </button>
       <ul class="dropdown-menu">
@@ -138,7 +138,7 @@ components: {
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -205,6 +205,7 @@ header nav .nav-link {
 }
 .dark header nav .nav-link {
   color: #B0B0B0;
+  font-family: 'Montserrat', sans-serif;
   // border: white 1px solid;
 }
 header nav .nav-link:hover {
