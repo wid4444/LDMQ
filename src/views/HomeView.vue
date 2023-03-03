@@ -8,11 +8,15 @@
       <h1>Leobardo D. Martinez-Quiroz</h1>
 
       <p class="para">
-        I am a Jr. Frontend focused Software Developer building the Frontend of Websites. I like design and
+        I’m a software engineer that builds, designs and deploys websites. 
+        Currently, I’m focused on designing and building user-friendly products for small businesses as a Freelancer.
       </p>
       <!-- <img src="../assets/logo.png" alt="Portfolio Image"> -->
     </div>
   </div>
+
+  <!-- <button class="button-85" role="button">Button 85</button> -->
+
 </div>
 </template>
 
@@ -84,7 +88,7 @@ color: #DEE2E6;
 .title h1 {
   color: #5A189A;
   font-weight: 800;
-  text-shadow:5px 5px #C77DFF;
+  // text-shadow:5px 5px #C77DFF;
   font-size: 60px;
 
   // font-family: 'Gajraj One', cursive;
@@ -100,12 +104,24 @@ font-family: 'Ultra', serif;
 // font-family: 'UnifrakturMaguntia', cursive;
 
 }
+.title h1:hover {
+  color: #5A189A;
+  text-shadow:10px 10px #C77DFF;
+  transition: 0.4s ease-in-out;
+}
+
 .dark .title h1 {
   color: rgb(20, 240, 57);
-  text-shadow:5px 5px #006400;
-
+  // text-shadow:5px 5px #006400;
 
 }
+.dark .title h1:hover {
+  color: rgb(20, 240, 57);
+  text-shadow:10px 10px #006400;
+  transition: 0.4s ease-in-out;
+
+}
+
 .title h3 {
 color: #DEE2E6;
 font-weight: 600;
@@ -123,7 +139,19 @@ display: block;
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #38B000;
+  // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
@@ -159,10 +187,46 @@ display: block;
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #7B2CBF;
+  // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    
+  // animation: title-h3 20s linear infinite;
+  // transition: opacity 0.3s ease-in-out;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
+// @-webkit-keyframes Animation {
+//     0%{background-position:10% 0%}
+//     50%{background-position:91% 100%}
+//     100%{background-position:10% 0%}
+// }
+// @-moz-keyframes Animation {
+//     0%{background-position:10% 0%}
+//     50%{background-position:91% 100%}
+//     100%{background-position:10% 0%}
+// }
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+
+
 .dark .title h3:hover::after,
 .dark .title h3:focus::after {
   opacity: 1;
@@ -188,17 +252,19 @@ display: block;
   // // align-items: flex-end;
   // text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   margin: 20px;
   z-index: 2;
   font-weight: 800;
   padding: 20px;
   border-radius: 10px;
 background: #495057;
+// background: white;
+
 color: #CED4DA;
 opacity: 85%;
 // border: green solid 4px;
-
+// box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
 .dark .para {
@@ -261,4 +327,76 @@ opacity: 85%;
   }
   
 }
+
+
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
 </style>
