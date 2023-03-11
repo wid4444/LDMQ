@@ -3,14 +3,32 @@
   <div class="about">
 
 <div class="description">
-  <p class="des">
 
-Hi! My name is Leobardo but my friends and family call me <strong>Danny.</strong>  When I was 14 years old I emigrated to the United States in search of the American Dream. 
+    <h1>A Little About Me</h1>
 
-I'm a Full Stack Java Software Developer based in Middletown, DE. I am bi-lingual and have over 10 years of experience in manufacturing. I am a self-taught artist and woodworker. I have volunteered at a nonprofit organization to paint murals around the city of Wilmington DE and collaborated with other groups on smaller projects. About three years ago I found a passion for woodworking, and since then I have created a number of projects like cabinets floating shelves, and even a small bar. With my attention to detail, creativity, and communication. I like to create responsive, and user-friendly application ideas. I am always interested in learning new languages and frameworks, improving my skills, and making a contribution to society.
+    <div class="intro">
 
-  </p>
-</div>
+    <img class="image" src="../assets/TechElevatorPic.jpeg" alt="">
+
+    <p class="des">
+  Hi! My name is Leobardo but my friends and family call me <strong>Danny.</strong>  
+  When I was 14 years old I emigrated to the United States in search of the American Dream. 
+<br>
+<br>
+  I'm a Full Stack Java Software Developer based in Middletown, DE. 
+  I am bi-lingual and have over 10 years of experience in manufacturing. 
+  I am a self-taught artist and woodworker. 
+  I have volunteered at a nonprofit organization to paint murals around the city of Wilmington DE 
+  and collaborated with other groups on smaller projects. 
+  About three years ago I found a passion for woodworking, 
+  and since then I have created a number of projects like cabinets floating shelves, 
+  and even a small bar. With my attention to detail, creativity, and communication. 
+  I like to create responsive, and user-friendly application ideas. 
+  I am always interested in learning new languages and frameworks, improving my skills, 
+  and making a contribution to society.
+    </p>
+  </div>
+  </div>
 
 <h1>Skills</h1>
 
@@ -46,6 +64,21 @@ I'm a Full Stack Java Software Developer based in Middletown, DE. I am bi-lingua
     <h5>Sass</h5>
   </div>
 
+  <div class="skill">
+    <i class="python fa-brands fa-python"></i>
+    <h5>Python</h5>
+  </div>
+
+  <div class="skill">
+    <i class="react fa-brands fa-react"></i>
+    <h5>React.js</h5>
+  </div>
+
+    <div class="skill">
+    <i class="swift fa-brands fa-swift"></i>
+    <h5>Swift UI</h5>
+  </div>
+
     <div class="skill">
     <i class="git fa-brands fa-git-alt"></i>
     <h5>Git</h5>
@@ -61,15 +94,7 @@ I'm a Full Stack Java Software Developer based in Middletown, DE. I am bi-lingua
     <h5>GitHub</h5>
   </div>
 
-    <div class="skill">
-    <i class="react fa-brands fa-react"></i>
-    <h5>React.js</h5>
-  </div>
-
-    <div class="skill">
-    <i class="swift fa-brands fa-swift"></i>
-    <h5>Swift UI</h5>
-  </div>
+    
 </div>
 
 <div class="tools">
@@ -152,6 +177,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .about {
   display: flex;
   flex-direction: column;
@@ -159,14 +185,34 @@ export default {
   align-items: center;
   margin: 20px;
 }
-
-.des {
-  text-align: center;
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
-  padding: 20px 100px;
-  border: solid 1px white;
+  // padding: 100px;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 100px;
+}
+.image {
+  width: 400px;
+border-radius: 50%;
+z-index: 1;
+}
+.des {
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+  // border: solid 1px white;
   border-radius: 20px;
-  width: 1200px;
+  width: 100%;
+  height: auto;
   // -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	//         animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -174,7 +220,7 @@ export default {
   color: gray;
   background: #495057;
   // box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  text-align: left;
+  // text-align: left;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
   
@@ -183,19 +229,19 @@ export default {
   color: gray;
   background: #CED4DA;
   // box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  text-align: left;
+  // text-align: left;
   box-shadow: rgba(255, 254, 254, 0.6) 0px 22px 70px 4px;
 
   
 }
-.skill h5:hover {
-  background: linear-gradient(-45deg, #42b883 10%, #35495e 50%, #42b883 90%);
-  // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+// .skill h5:hover {
+//   background: linear-gradient(-45deg, #42b883 10%, #35495e 50%, #42b883 90%);
+//   // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
 
-  border-radius: 15px;
-  margin: 10px;
-  padding: 5px 0;
-}
+//   border-radius: 15px;
+//   margin: 10px;
+//   padding: 5px 0;
+// }
 .skills {
   text-align: center;
   display: flex;
@@ -208,6 +254,7 @@ export default {
 
   width: 100%;
   margin: 20px;
+  padding: 100px;
 }
 .tools {
   text-align: center;
@@ -220,7 +267,9 @@ export default {
   // border: solid 1px white;
 
   // width: 100%;
-  // margin: 20px;
+  padding: 0px 100px 100px 100px;
+
+  margin-bottom: 200px;
 }
 .icon {
 width: 80px;
@@ -268,9 +317,9 @@ text-shadow: 10px 10px #42b883;
 color: #CED4DA;
 text-shadow: 10px 10px #42b883;
 }
-.vue h5 {
-color: #42b883;
-}
+// .vue h5 {
+// color: #42b883;
+// }
 
 
 .html  {
@@ -289,60 +338,132 @@ text-shadow: 10px 10px #e34c26;
   
 // }
 
-.html h5:hover {
-  color: #e34c26;
+// .html h5:hover {
+//   color: #e34c26;
   
+// }
+
+
+.css  {
+  color: #264de4;
+}
+.css:hover  {
+  color: #495057;
+text-shadow: 10px 10px #264de4;
+}
+.dark .css:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #264de4;
 }
 
-
-.css:hover  {
-  color: #1650cc;
+.js  {
+  color: #F0DB4F;
 }
 .js:hover  {
-  color: #bacc16;
+  color: #495057;
+text-shadow: 10px 10px #F0DB4F;
+}
+.dark .js:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #F0DB4F;
+}
+
+.java  {
+  color: #e25052;
 }
 .java:hover  {
-  color: #169fcc;
+  color: #495057;
+text-shadow: 10px 10px #e25052;
+}
+.dark .java:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #e25052;
+}
+
+
+.sass  {
+  color: #cc6699;
 }
 .sass:hover  {
-  color: #cc16b4;
+  color: #495057;
+text-shadow: 10px 10px #cc6699;
+}
+.dark .sass:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #cc6699;
+}
+
+.python  {
+  color: #ffde57;
+}
+.python:hover  {
+  color: #495057;
+text-shadow: 10px 10px #ffde57;
+}
+.dark .python:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #ffde57;
+}
+
+.git  {
+  color: #F1502F;
 }
 .git:hover  {
-  color: #cc6e16;
-}.gitlab:hover  {
-  color: #cc4016;
-}.github:hover  {
+  color: #495057;
+text-shadow: 10px 10px #F1502F;
+}
+.dark .git:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #F1502F;
+}
+
+.gitlab  {
+  color: #fca326;
+}
+.gitlab:hover  {
+  color: #495057;
+text-shadow: 10px 10px #fca326;
+}
+.dark .gitlab:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #fca326;
+}
+
+.github  {
   color: #8c16cc;
-}.react:hover  {
-  color: #16aecc;
+}
+.github:hover  {
+  color: #495057;
+text-shadow: 10px 10px #8c16cc;
+}
+.dark .github:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #8c16cc;
+}
+.react  {
+  color: #61dbfb;
+}
+.react:hover  {
+  color: #495057;
+text-shadow: 10px 10px #61dbfb;
+}
+.dark .react:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #61dbfb;
+}
+.swift  {
+  color: #1049d7;
 }
 .swift:hover  {
-  color: #1656cc;
+  color: #495057;
+text-shadow: 10px 10px #1049d7;
+}
+.dark .swift:hover  {
+  color: #CED4DA;
+text-shadow: 10px 10px #1049d7;
 }
 
 
-
-
-// @-webkit-keyframes slide-right {
-//   0% {
-//     -webkit-transform: translateX(-500px);
-//             transform: translateX(-500px);
-//   }
-//   100% {
-//     -webkit-transform: translateX(50px);
-//             transform: translateX(50px);
-//   }
-// }
-// @keyframes slide-right {
-//   0% {
-//     -webkit-transform: translateX(-500px);
-//             transform: translateX(-500px);
-//   }
-//   100% {
-//     -webkit-transform: translateX(50px);
-//             transform: translateX(50px);
-//   }
-// }
 .des strong {
   color: turquoise;
   font-weight: 200;
@@ -352,36 +473,6 @@ text-shadow: 10px 10px #e34c26;
   // padding: 0.2em 0;
 
 }
-// .des strong::after {
-//   opacity: 1;
-//   transform: scale(0);
-//   transform-origin: center;
-// }
-
-// .des strong:hover::after,
-// .des strong:focus::after{
-//   transform: scale(1);
-// }
-
-// .des strong {
-//   overflow: hidden;
-// }
-
-// .des strong::after {
-//   opacity: 1;
-//   transform: translate3d(-100%, 0, 0);
-// }
-
-// .des strong:hover::after,
-// .des strong:focus::after{
-//   transform: translate3d(0, 0, 0);
-// }
-
-
-
-
-
-
 
 
 .icon {
@@ -402,34 +493,46 @@ text-shadow: 10px 10px #e34c26;
   // border: 1px white solid;
   filter: brightness(100%);
 }
+@media screen and (max-width:1200px) {
+  .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 100px;
+}
+.image {
+  width: 350px;
+  padding: 20px;
 
+}
+.des {
+  text-align: center;
+}
+}
 
-// .shake {
-//   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-//   transform: translate3d(0, 0, 0);
-// }
+@media screen and (max-width:700px) {
+  .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-bottom: 100px;
+}
+.image {
+  width: 300px;
+  padding: 20px;
 
-// @keyframes shake {
-//   10%,
-//   90% {
-//     transform: translate3d(-1px, 0, 0);
-//   }
-
-//   20%,
-//   80% {
-//     transform: translate3d(2px, 0, 0);
-//   }
-
-//   30%,
-//   50%,
-//   70% {
-//     transform: translate3d(-4px, 0, 0);
-//   }
-
-//   40%,
-//   60% {
-//     transform: translate3d(4px, 0, 0);
-//   }
-// }
+}
+.skills {
+  padding: 0px;
+}
+.tools {
+  padding: 0px;
+}
+.des {
+  text-align: center;
+}
+}
 
 </style>

@@ -78,6 +78,7 @@ color: #DEE2E6;
   // border: black solid 4px;
   width: 100%;
   height: 600px;
+  top: 200px;
 //     padding: 20px;
 //     border-radius: 10px;
 // background: #6c757d;
@@ -305,9 +306,15 @@ opacity: 85%;
 // }
 
 @media screen and (max-width:700px) {
-  // .home {
-  //     height: 300px;
-  // }
+  .pic {
+  width: 100%;
+  // Height needs to be change when cell phone sizing !important
+  height: 350px;  
+  // background: url("../assets/LDM3.JPG") no-repeat right;
+  background-size: 100% auto;
+  margin: 20px;
+  // border-radius: 5px;
+}
   .title {
       height: 620px;
       top: 40px;
@@ -315,6 +322,7 @@ opacity: 85%;
   .title h1 {
     font-size: 30px;
     margin: 10px;
+    padding-bottom: 20px;
   }
   .title h3 {
     font-size: 20px;
@@ -322,8 +330,10 @@ opacity: 85%;
 
   }
   .para {
-      margin: 10px;
-      max-width: 480px;
+    // margin-top: 20px;
+      margin: 0px;
+      text-align: center;
+      // max-width: 480px;
   }
   
 }

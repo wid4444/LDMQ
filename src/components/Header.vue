@@ -96,7 +96,6 @@ components: {
   background: #6C757D;
 }
 .btn {
-
   color: #008000;
 }
 .dark .btn {
@@ -245,21 +244,20 @@ header nav .nav-link:hover {
     align-items: center;
   color: #212529;
   padding: 5px 10px;
+  margin: 20px;
 }
 .dropdown-menu .nav-link:hover {
   color: #E9ECEF;
   background: #ADB5BD;
-  margin: 0px 25px;
+  margin: 20px;
   border-radius: 5px;
 border: 1px solid #9D4EDD;
-
+margin: 20px;
 }
-
-
 .dark .dropdown-menu .nav-link {
 color: #CED4DA;
 font-size: 18px;
-
+margin: 20px;
 }
 .dark .dropdown-menu .nav-link:hover {
   color: #212529;
@@ -267,9 +265,8 @@ font-size: 18px;
   margin: 0px 25px;
   border-radius: 5px;
   border: 0.5px solid #70E000;
-
+  margin: 20px;
 }
-
   .dropdown {
   display: contents;
   margin-right: 60px;
