@@ -288,6 +288,7 @@ opacity: 85%;
   background-size: 100% auto;
   margin: 20px;
   border-radius: 5px;
+  margin-bottom: 200px;
 }
 .dark .pic {
   background: url("../assets/LDM4.JPG") no-repeat right;

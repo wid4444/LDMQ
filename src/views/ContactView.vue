@@ -1,15 +1,35 @@
 <template>
   <div class="contact">
-    this is for contact information
 
+    <h1>Contacte Me</h1>
 
-    <div class="icons">
-      <i class="github fa-brands fa-github"></i>
-      <i class="linkedin fa-brands fa-linkedin"></i>
-    <i class="codepen fa-brands fa-codepen"></i>
+    <div class="footer">
+
+<div class="forma">
+
+<form>
+  <input type="text" name="name" id="name" placeholder="Name" required>
+  <input type="email" name="email" id="email" placeholder="Email" required>
+  <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+</div>
+
+    <div class="info">
+
+      <button>Resume</button>
+
+      <div class="icons">
+        <i class="github fa-brands fa-github"></i>
+        <i class="linkedin fa-brands fa-linkedin"></i>
+        <i class="codepen fa-brands fa-codepen"></i>
+      </div>
+
   </div>
 
 
+</div>
   </div>
 </template>
 
@@ -20,6 +40,46 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+
+}
+.forma form{
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.forma form input, textarea {
+  width: 100%;
+border-radius: 7px;
+margin: 5px;
+
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .icons {
   display: flex;
   flex-direction: row;
