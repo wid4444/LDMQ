@@ -82,7 +82,7 @@ components: {
   //  --fa-animation-timing: ease-in-out;
 }
 .fa-burger:hover {
-   --fa-animation-duration: 2s;
+   --fa-animation-duration: 1s;
    --fa-animation-iteration-count: 20;
    --fa-animation-timing: ease-in-out;
 }
@@ -91,6 +91,8 @@ components: {
 }
 .dark .dropdown-toggle {
   background: #495057;
+  // background: url("../assets/neon.png") no-repeat center center;
+
 }
 .dark .dropdown-toggle:hover {
   background: #6C757D;
@@ -117,6 +119,8 @@ components: {
 .dark .fa-burger {
   
   color: rgb(20, 240, 57);
+  // background: url("../assets/neon.png") no-repeat center center;
+
   text-shadow: none;
 }
 
@@ -149,11 +153,11 @@ header {
   margin: 0px 20px;
   height: 60px;
   border-radius: 5px;
-  background: #CED4DA;
+  // background: #CED4DA;
   transition: background 0.3s ease-in-out;
 }
 .dark header {
-  background: #343A40;
+  // background: #343A40;
 }
 header h1 {
   display: flex;

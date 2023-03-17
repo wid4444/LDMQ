@@ -11,7 +11,7 @@
     <img class="image" src="../assets/TechElevatorPic.jpeg" alt="">
 
     <p class="des">
-  Hi! My name is Leobardo but my friends and family call me <strong>Danny.</strong>  
+  Hi! My name is Leobardo but my family and friends call me <strong>Danny.</strong>  
   When I was 14 years old I emigrated to the United States in search of the American Dream. 
 <br>
 <br>
@@ -184,6 +184,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 20px;
+
 }
 .description {
   display: flex;
@@ -191,6 +192,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 20px;
+
   // padding: 100px;
 }
 .intro {
@@ -198,7 +200,22 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 20px 0px  #ADB5BD;
+  background: url("../assets/neon.png") no-repeat center center;
+  width: 100%;
+  filter: brightness(90%);
+
+
+
   // margin-bottom: 100px;
+}
+.dark .intro {
+  box-shadow: 0px 6px 20px 0px  #E9ECEF;
+  filter: brightness(90%);
+
 }
 .image {
   width: 400px;
@@ -213,24 +230,26 @@ z-index: 1;
   border-radius: 20px;
   width: 100%;
   height: auto;
+  color: #212529;
+  font-weight: 600;
+
   // -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	//         animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.des:hover {
-  color: gray;
-  background: #495057;
-  // box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  // text-align: left;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+// .des:hover {
+//   color: gray;
+//   background: #495057;
+//   // box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+//   // text-align: left;
+//   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
   
-}
-.dark .des:hover {
-  color: gray;
-  background: #CED4DA;
-  // box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  // text-align: left;
-  box-shadow: rgba(255, 254, 254, 0.6) 0px 22px 70px 4px;
+// }
+.dark .des {
+  color: #CED4DA;
+  // background: #CED4DA;
+  
+  // box-shadow: rgba(255, 254, 254, 0.6) 0px 22px 70px 4px;
 
   
 }
@@ -272,7 +291,9 @@ z-index: 1;
   margin-bottom: 200px;
 }
 .icon {
-width: 80px;
+// width: 80px;
+width: 150px;
+  height: 150px;
 // box-shadow: 20px 20px  #70E000;
 margin: 20px;
 padding: 20px;
@@ -280,7 +301,8 @@ padding: 20px;
 // border-radius: 50%;
 }
 .icon:hover {
-  width: 100px;
+  width: 140px;
+  height: 140px;
 
 }
 .fa-brands {
@@ -466,7 +488,7 @@ text-shadow: 10px 10px #1049d7;
 
 .des strong {
   color: turquoise;
-  font-weight: 200;
+  font-weight: 600;
 
   // display: block;
   // position: relative;
@@ -476,7 +498,7 @@ text-shadow: 10px 10px #1049d7;
 
 
 .icon {
-  width: 120px;
+  // width: 120px;
   /* height: 200px; */
   // border: 1px black solid;
   margin: 20px;

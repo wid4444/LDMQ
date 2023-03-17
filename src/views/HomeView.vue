@@ -4,8 +4,15 @@
 
     <div class="title">
 
-      <h3>Hi, my name is</h3>
-      <h1>Leobardo D. Martinez-Quiroz</h1>
+      <!-- <div class="hi">Hi, my name is</div> -->
+
+<Hi/>
+      <!-- <h1>Leobardo D. Martinez-Quiroz</h1> -->
+      <Name/>
+      
+<!-- <Para/> -->
+
+
 
       <p class="para">
         I’m a software engineer that builds, designs and deploys websites. 
@@ -21,12 +28,18 @@
 </template>
 
 <script>
+import Hi from '../components/Hi.vue'
+import Name from '../components/Name.vue'
+import Para from '../components/Para.vue'
+
 
 
 export default {
   props: ['mode'],
   components: {
-    
+    Name,
+    Hi,
+    Para,
   }
 
 }
@@ -40,15 +53,15 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.content {
-  padding: 25px;
-}
-.content h3 {
-  font-size: 28px;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 25px;
-}
+// .content {
+//   padding: 25px;
+// }
+// .content h3 {
+//   font-size: 28px;
+//   text-transform: uppercase;
+//   font-weight: 300;
+//   margin-bottom: 25px;
+// }
 // .image-grid {
 //     display: grid;
 //     grid-template-columns: repeat(3, 1fr);
@@ -123,7 +136,7 @@ font-family: 'Ultra', serif;
 
 }
 
-.title h3 {
+.hi {
 color: #DEE2E6;
 font-weight: 600;
 // Start of the underline
@@ -133,7 +146,7 @@ display: block;
 
   overflow: hidden;
 }
-.title h3::after {
+.hi::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -156,21 +169,21 @@ display: block;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
-.title h3:hover::after,
-.title h3:focus::after {
+.hi:hover::after,
+.hi:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
-.title h3::after {
+.hi::after {
   opacity: 1;
   transform: translate3d(-100%, 0, 0);
 }
-.title h3:hover::after,
-.title h3:focus::after {
+.hi:hover::after,
+.hi:focus::after {
       transform: translate3d(0, 0, 0);
     }
 // End of the underline in Light mode
-.dark .title h3 {
+.dark .hi {
   color: #DEE2E6;
   font-weight: 600;
 // Start of the underline
@@ -181,7 +194,7 @@ display: block;
   overflow: hidden;
 
 }
-.dark .title h3::after {
+.dark .hi::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -228,17 +241,17 @@ display: block;
 
 
 
-.dark .title h3:hover::after,
-.dark .title h3:focus::after {
+.dark .hi:hover::after,
+.dark .hi:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
-.dark .title h3::after {
+.dark .hi::after {
   opacity: 1;
   transform: translate3d(-100%, 0, 0);
 }
-  .dark .title h3:hover::after,
-  .dark .title h3:focus::after {
+  .dark .hi:hover::after,
+  .dark .hi:focus::after {
       transform: translate3d(0, 0, 0);
     }
 // End of the underline
@@ -253,10 +266,11 @@ display: block;
   // // align-items: flex-end;
   // text-align: center;
   width: 100%;
-  max-width: 550px;
-  margin: 20px;
+  max-width: 700px;
+  margin: 20px 100px 50px;
   z-index: 2;
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 20px;
   padding: 20px;
   border-radius: 10px;
 background: #495057;
@@ -305,6 +319,24 @@ opacity: 85%;
 //   }
   
 // }
+@media screen and (max-width:1200px) {
+//   .pic {
+//   width: 100%;
+//   // Height needs to be change when cell phone sizing !important
+//   height: 50px;  
+//   // background: url("../assets/LDM3.JPG") no-repeat right;
+//   background-size: 100% auto;
+//   margin: 20px;
+//   // border-radius: 5px;
+// }
+.para {
+    // margin-top: 20px;
+      margin: 0px 0px 60px 40px;
+      text-align: center;
+      max-width: 600px;
+      font-size: 18px;
+  }
+}
 
 @media screen and (max-width:700px) {
   .pic {
@@ -325,16 +357,19 @@ opacity: 85%;
     margin: 10px;
     padding-bottom: 20px;
   }
-  .title h3 {
+  .hi {
     font-size: 20px;
     margin: 10px;
 
   }
   .para {
     // margin-top: 20px;
-      margin: 0px;
+
+      margin: 0px 0px 120px 0px;
       text-align: center;
-      // max-width: 480px;
+      max-width: 500px;
+      font-size: 15px;
+
   }
   
 }
