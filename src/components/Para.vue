@@ -1,20 +1,24 @@
 <template>
 
-  <h1>
-  <span>I’m a software engineer that</span>
-  <div class="message">
-    <div class="word1">designs</div>
-    <div class="word2">builds</div>
-    <div class="word3">deploys</div>
-  </div>
+<h4 class="wordCarousel">
+    <span>I’m a software engineer that enjoys </span>
+    <div>
+        <!-- Use classes 2,3,4, or 5 to match the number of words -->
+        <ul class="flip5">
+            <li>websites</li>
+            <li>deploying</li>
+            <li>and</li>
+            <li>building</li>
+            <li>designing</li>
+        </ul>
+    </div>
+</h4>
 
-</h1>
 
-
-<p class="para">
+<!-- <p class="para">
         I’m a software engineer that builds, designs and deploys websites. 
         Currently, I’m focused on designing and building user-friendly products for small businesses as a Freelancer.
-      </p>
+      </p> -->
 
 </template>
 
@@ -25,116 +29,110 @@ export default {
 </script>
 
 <style scoped lang="scss">
-* {
-  box-sizing: border-box;
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #eee;
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+        li {
+            font-family: Serif;
+            color: #eee;
+            font-weight: 700;
+            padding: 0 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+    }
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -180px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -360px; }
+}
+
+@keyframes flip5 {
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    20% { margin-top: -360px; }
+    25% { margin-top: -270px; }
+    40% { margin-top: -270px; }
+    45% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -450px; }
+}
+
+// Layout //////////////////////////////////////////
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-h1 {
-  color: green;
-  font-family: tahoma;
-  font-size: 3rem;
-  font-weight: 100;
-  line-height: 1.5;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  width: 550px;
-}
-
-h1 span {
-  font-size: 20px;
-  margin-left: 40px;
-}
-
-.message {
-  background-color: red;
-  color: #333;
-  display: block;
-  font-weight: 900;
-  font-size: 3rem;
-
-  overflow: hidden;
-  position: absolute;
-  padding-left: 0.5rem;
-  top: 0.2rem;
-  left: 360px;
-  animation: openclose 5s ease-in-out infinite;
-}
-
-.word1, .word2, .word3 {
-  font-family: tahoma;
-}
-
-@keyframes openclose {
-  0% {
-    top: 0.2rem;
-    width: 0;
-  }
-  5% {
-    width: 0;
-  }
-  15% {
-    width: 230px;
-  }
-  30% {
-    top: 0.2rem;
-    width: 230px;
-  }
-  33% {
-    top: 0.2rem;
-    width: 0;
-  }
-  35% {
-    top: 0.2rem;
-    width: 0;
-  }
-  38% {
-    top: -4.5rem;
-    
-  }
-  48% {
-    top: -4.5rem;
-    width: 190px;
-  }
-  62% {
-    top: -4.5rem;
-    width: 190px;
-  }
-  66% {
-    top: -4.5rem;
-    width: 0;
-    text-indent: 0;
-  }
-  71% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  86% {
-    top: -9rem;
-    width: 285px;
-  }
-  95% {
-    top: -9rem;
-    width: 285px;
-  }
-  98% {
-    top: -9rem;
-    width: 0;
-    text-indent: 5px;
-  }
-  100% {
-    top: 0;
-    width: 0;
-    text-indent: 0;
-  }
+    font-family: "Roboto Condensed", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkorange; 
+    &::after {
+        content:"";
+        display: block;
+        width: 110%;
+        height: 125vh;
+        background: radial-gradient(#222, #000);
+        position: absolute;
+        z-index: -1;
+        transform: rotate(20deg);
+        border-radius: 50%;
+    }
 }
 </style>

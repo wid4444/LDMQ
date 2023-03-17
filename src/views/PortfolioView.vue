@@ -1,6 +1,9 @@
 <template>
   <div class="portfolio">
-    <h1>Some Things I've Built</h1>
+
+    <h1 data-heading="I">Some Things I've Built</h1>
+
+    <!-- <h1>Some Things I've Built</h1> -->
 
     <div class="projects">
 
@@ -41,17 +44,18 @@ export default {
   align-items: center;
   
 }
-.portfolio h1 {
-  margin-top: 40px;
+// .portfolio h1 {
+//   margin-top: 40px;
   
-}
+// }
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin: 80px;
+  margin: 120px 80px 80px 80px;
+  top: 60%;
   padding: 40px;
 border-radius: 20px;
 box-shadow: 0px 6px 20px 0px  #495057;
@@ -184,4 +188,82 @@ box-shadow: 0px 6px 20px 0px  #495057;
 }
 }
 
+
+
+
+
+$h1:  #ADB5BD;
+$blue: #98b5cc;
+$yellow: #bc00dd;
+$outline: rgba(#ADB5BD, .4);
+// $shadow: rgba($yellow, .2);
+// html,
+// body {
+//   background: linear-gradient(45deg, rgba(45,45,45,1) 9%,rgba(0,0,0,1) 100%);
+//   width: 100%;
+//   height: 100%;
+// }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+  margin: 20px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: $h1;
+  letter-spacing: 2px;
+  
+  &:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    color: $yellow;
+    width: 100%;
+    z-index: 5;
+    text-shadow: none;
+    left: 60.5%;
+    text-align: left;
+    animation: flicker 3s linear infinite;
+  }
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 2px #9900ff, 0 0 4px #d744ff, 0 0 2px #9900ff, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+  font-family: 'CoreCircus2DDot1';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CoreCircus';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
 </style>

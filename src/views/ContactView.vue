@@ -1,7 +1,15 @@
 <template>
   <div class="contact">
 
-    <h1>Contact Me</h1>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter">Contact Me</h3>
+    </div>
+  </div>
+</div>
+
+    <!-- <h1>Contact Me</h1> -->
 
     <div class="footer">
 
@@ -331,4 +339,35 @@ text-shadow: 5px 5px 5px green;
 }
 }
 
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #4cc9f0 0%,
+    #3f37c9 29%,
+    #560bad 67%,
+    #f72585 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 </style>
