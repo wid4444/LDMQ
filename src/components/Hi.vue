@@ -12,15 +12,15 @@ export default {
 <style scoped lang="scss">
 
 .hi {
-color: #DEE2E6;
+color: #64dfdf;
 font-weight: 600;
- top: -180px;
+ top: -200px;
  font-size: 30px;
 // Start of the underline
 display: block;
   position: relative;
   padding: 0.2em 0;
-  margin-left: 100px;
+  margin-left: 180px;
 
   overflow: hidden;
 }
@@ -132,6 +132,16 @@ display: block;
   .dark .hi:focus::after {
       transform: translate3d(0, 0, 0);
     }
+    @media screen and (max-width:1200px) { 
+      .hi {
+ font-size: 25px;
+ top: -180px;
+
+margin-left: 130px;
+      }
+
+    }
+
     @media screen and (max-width:700px) {
       .hi {
 // color: #DEE2E6;

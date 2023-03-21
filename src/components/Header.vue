@@ -87,27 +87,30 @@ components: {
    --fa-animation-timing: ease-in-out;
 }
 .dropdown-toggle {
-  background: #ADB5BD;
+  background: #72CE27;
+}
+.dropdown-toggle:hover {
+  background: #95E214;
 }
 .dark .dropdown-toggle {
-  background: #495057;
+  background: #272640;
   // background: url("../assets/neon.png") no-repeat center center;
 
 }
 .dark .dropdown-toggle:hover {
-  background: #6C757D;
+  background: #312244;
 }
 .btn {
-  color: #008000;
+  color: #f5009b;
 }
 .dark .btn {
-  color: #9D4EDD;
+  color: #80FFDB;
 }
 
 .fa-burger {
-  color: #9D4EDD;
+  color: #FDD54F;
   font-size: 35px;
-  text-shadow:1px 1px #E0AAFF;
+  text-shadow: 0px 0px 4px #F8049C;
   // font-family: 'Open Sans', sans-serif;
 
   // filter:drop-shadow(20px 10px 1px red)
@@ -117,11 +120,13 @@ components: {
 // box-shadow:0 .5rem 1rem 0 rgb(224, 170, 255),0 .375rem 1.25rem 0 rgb(199, 125, 255)
 }
 .dark .fa-burger {
-  
-  color: rgb(20, 240, 57);
+  color: #9d4edd;
+  text-shadow: 0px 0px 8px  #72efdd;
+
+  // color: rgb(20, 240, 57);
   // background: url("../assets/neon.png") no-repeat center center;
 
-  text-shadow: none;
+  // text-shadow: none;
 }
 
 .dropdown {
@@ -159,25 +164,25 @@ header {
 .dark header {
   // background: #343A40;
 }
-header h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  // text-transform: uppercase;
-  font-weight: 600;
-  // margin-left: 0px;
-  margin: 0;
-  color: #9D4EDD;
-  // font-family: 'Gajraj One', sans-serif;
-font-family: 'Handlee', sans-serif;
-// font-family: 'Italianno', sans-serif;
-// font-family: 'Montserrat', sans-serif;
+// header h1 {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 35px;
+//   // text-transform: uppercase;
+//   font-weight: 600;
+//   // margin-left: 0px;
+//   margin: 0;
+//   color: #9D4EDD;
+//   // font-family: 'Gajraj One', sans-serif;
+// font-family: 'Handlee', sans-serif;
+// // font-family: 'Italianno', sans-serif;
+// // font-family: 'Montserrat', sans-serif;
 
-}
-.dark header h1 {
-color: #70E000;
-}
+// }
+// .dark header h1 {
+// color: #70E000;
+// }
 .color h1 {
     margin-right: 10px;
   text-transform: uppercase;
@@ -200,25 +205,31 @@ header nav .nav-link {
   align-items: center;
   padding: 0px 15px;
   text-decoration: none;
-  color: #212529;
+  color: #72CE27;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: px;
   margin: 5px;
 
 }
 .dark header nav .nav-link {
-  color: #B0B0B0;
+  color: #ADB5BD;
+  border: 0.5px solid #72EFDD;
+border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
   // border: white 1px solid;
 }
 header nav .nav-link:hover {
-  background: #ADB5BD;
-  border: 1px solid #9D4EDD;
+  color: #FDD54F;
+  background: #F8049C;
+  // border: 1px solid #9D4EDD;
+border-radius: 6px;
+
 
 }
 .dark header nav .nav-link:hover {
-  background: #6c757d;
-  border: 0.5px solid #70E000;
+  color: #6c757d;
+  background: #72EFDD;
+  // border: 0.5px solid #72EFDD;
 
 }
 // .color {
@@ -235,11 +246,18 @@ header nav .nav-link:hover {
   
 
   .dropdown-menu {
-    $dropdown-dark-link-disabled-color: #ADB5BD;
+    $dropdown-dark-link-disabled-color: #0B525B;
     // $dropdown-color: var(--#ADB5BD body-color);
-    background: #6C757D;
+    // background: #144552;
+    background: linear-gradient(0deg, rgba(123,241,168,1) 0%, rgba(193,251,164,1) 25%, rgba(255,239,159,1) 50%, rgba(255,214,224,1) 75%, rgba(144,241,239,1) 100%);
+
     padding: 0;
   }
+.dark .dropdown-menu { 
+  background: linear-gradient( rgba(49,34,68,1) 0%, rgba(33,47,69,1) 39%, rgba(27,58,75,1) 61%, rgba(11,82,91,1) 100%);
+
+}
+
 
   .dropdown-menu .nav-link {
     display: flex;
@@ -251,11 +269,11 @@ header nav .nav-link:hover {
   margin: 20px;
 }
 .dropdown-menu .nav-link:hover {
-  color: #E9ECEF;
-  background: #ADB5BD;
+  color: #BE0AFF;
+  // background: #ADB5BD;
   margin: 20px;
   border-radius: 5px;
-border: 1px solid #9D4EDD;
+// border: 1px solid #9D4EDD;
 margin: 20px;
 }
 .dark .dropdown-menu .nav-link {
@@ -264,11 +282,12 @@ font-size: 18px;
 margin: 20px;
 }
 .dark .dropdown-menu .nav-link:hover {
-  color: #212529;
-  background: #ADB5BD;
+  color: #80FFDB;
+  font-weight: 600;
+  // background: #ADB5BD;
   margin: 0px 25px;
   border-radius: 5px;
-  border: 0.5px solid #70E000;
+  // border: 0.5px solid #70E000;
   margin: 20px;
 }
   .dropdown {

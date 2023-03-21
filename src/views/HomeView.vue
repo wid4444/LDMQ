@@ -6,18 +6,20 @@
 
       <!-- <div class="hi">Hi, my name is</div> -->
 
-<Hi/>
+<Hi :mode="mode" @toggle="toggle"/>
       <!-- <h1>Leobardo D. Martinez-Quiroz</h1> -->
-      <Name/>
+      <Name :mode="mode" @toggle="toggle"/>
       
-<Para/>
+<Para :mode="mode" @toggle="toggle"/>
 
 
 
-      <p class="para">
+      <!-- <p class="para">
         I’m a software engineer that builds, designs and deploys websites. 
         Currently, I’m focused on designing and building user-friendly products for small businesses as a Freelancer.
-      </p>
+      </p> -->
+
+
       <!-- <img src="../assets/logo.png" alt="Portfolio Image"> -->
     </div>
   </div>

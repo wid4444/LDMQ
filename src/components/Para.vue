@@ -24,6 +24,7 @@
 
 <script>
 export default {
+    props: ['mode']
 
 }
 </script>
@@ -33,23 +34,37 @@ export default {
     font-size: 36px;
     font-weight: 100;
     color: #eee;
+    margin: 0 0px 140px 180px;
     div {
         overflow: hidden;
         position: relative;
         float: right;
-        height: 65px;
-        padding-top: 10px;
-        margin-top: -10px;
-        li {
-            font-family: Serif;
-            color: #eee;
+        height: 75px;
+        padding-top: 0px;
+        margin-top: 0px;
+         li {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            color: #FF9900;
+    text-shadow: 0 0 6px #FF9900;
             font-weight: 700;
             padding: 0 10px;
             height: 45px;
             margin-bottom: 45px;
             display: block;
         }
+    //     li {
+    //         color: #FF9900;
+    // text-shadow: 0 0 6px #FF9900;
+    //     } 
     }
+}
+.dark .wordCarousel div li {
+    text-shadow: 0 0 6px #80ffdb;
+            color: #80ffdb;
+    
+
+
 }
 
 .flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
@@ -118,7 +133,7 @@ html {
 }
 
 body {
-    font-family: "Roboto Condensed", cursive;
+    // font-family: "Roboto Condensed", cursive;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,4 +150,32 @@ body {
         border-radius: 50%;
     }
 }
+@media screen and (max-width:1200px) { 
+.wordCarousel {
+    font-size: 22px;
+    margin: 0 0px 130px 40px;
+
+}
+
+      
+
+    }
+ @media screen and (max-width:700px) {
+     .wordCarousel {
+    font-size: 15px;
+    margin: 0 0px 180px 40px;
+
+    }
+    li {
+            // font-family: 'Montserrat', sans-serif;
+            // text-transform: uppercase;
+            // text-shadow: 0 0 8px #80ffdb;
+            // color: #80ffdb;
+            // font-weight: 700;
+            padding: 0 10px;
+            // height: 45px;
+            margin-bottom: 75px;
+            // display: block;
+        }
+ }
 </style>

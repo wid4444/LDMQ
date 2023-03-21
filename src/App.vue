@@ -8,6 +8,8 @@
     <router-view />
 
   </div>
+
+
 </template>
 
 <script>
@@ -19,7 +21,7 @@ export default {
   name: 'app',
   data () {
     return {
-      mode: 'dark'
+      mode: 'light'
     }
   },
   components: {
@@ -70,7 +72,7 @@ export default {
   transition: background 0.3s ease-in-out;
 }
 .dark {
-  background: #212529;
+  background: #272640;
   color: #DEE2E6;
 }
 // #app {

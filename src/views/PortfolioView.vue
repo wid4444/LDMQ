@@ -16,12 +16,12 @@
       
     </div>
 <div class="project">
-      <a href="https://www.avi-it.org/">
+      <!-- <a href="https://www.avi-it.org/"> -->
         <img id="lopez-logo" src="../assets/my-work/Lopez.png" alt="">
         <!-- <img id="lopez-logo" src="../assets/my-work/Lopez2.png" alt=""> -->
-      </a>
+      <!-- </a> -->
       <h4>Responsive Vue Website for a General Contractors Company</h4>
-        <img id="mock-up" src="../assets/my-work/avi-it.png" alt="">
+        <img id="mock-up" src="../assets/my-work/soon.png" alt="">
       
     </div>
 
@@ -53,24 +53,27 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 1280px;
   margin: 120px 80px 80px 80px;
   top: 60%;
   padding: 40px;
 border-radius: 20px;
-box-shadow: 0px 6px 20px 0px  #495057;
+box-shadow: 0px 6px 20px 0px  #065A60;
 background: linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(233,236,239,1) 100%);
-// background: url("../assets/modern-painting.jpeg") no-repeat center center;
+background: url("../assets/projectslight.jpeg") no-repeat center center;
+// background: linear-gradient(0deg, rgba(77,25,77,1) 0%, rgba(49,34,68,1) 17%, rgba(33,47,69,1) 39%, rgba(27,58,75,1) 61%, rgba(11,82,91,1) 85%, rgba(0,100,102,1) 100%);
 
 
 
 }
 .dark .projects {
-  box-shadow: 0px 6px 20px 0px  #E9ECEF;
+  box-shadow: 0px 6px 20px 0px  #065A60;
 // background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(206,212,218,1) 100%);
 // background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(108,117,125,1) 100%);
 // background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(173,181,189,1) 100%);
 // background: url("../assets/neon.png") no-repeat center center;
+background: url("../assets/projects1.jpeg") no-repeat center center;
+
 
 
 
@@ -140,11 +143,13 @@ background: linear-gradient(0deg, rgba(108,117,125,1) 0%, rgba(233,236,239,1) 10
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
-  margin: 20px;
+  width: 1000px;
+  margin: 120px 80px 80px 80px;
+
   padding: 20px;
 border-radius: 20px;
 box-shadow: 0px 6px 20px 0px  #495057;
+
 
 
 }
@@ -159,8 +164,8 @@ box-shadow: 0px 6px 20px 0px  #495057;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  margin: 20px;
+  width: 550px;
+  // margin: 20px;
   padding: 20px;
 border-radius: 20px;
 box-shadow: 0px 6px 20px 0px  #495057;
@@ -217,6 +222,7 @@ h1 {
   position: absolute;
   color: $h1;
   letter-spacing: 2px;
+  margin: 40px;
   
   &:before {
     content: attr(data-heading);

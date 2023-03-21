@@ -34,6 +34,7 @@
 
 <div class="skills">
 
+
 <div class="skill">
   <i class="vue fa-brands fa-vuejs"></i>
   <h5>Vue.js</h5>
@@ -97,13 +98,13 @@
     
 </div>
 
-<div class="tools">
+<!-- <div class="tools">
     <img class="icon" src="../assets/icons/IntelliJ.png" alt="">
     <img class="icon" src="../assets/icons/PyCharm.png" alt="">
     <img class="icon" src="../assets/icons/VSCode.png" alt="">
     <img class="icon" src="../assets/icons/xcode.png" alt="">
     <img class="icon" src="../assets/icons/PostgreSQL.png" alt="">
-  </div>
+  </div> -->
     
 
     
@@ -155,8 +156,8 @@
 <script>
 
 export default {
+
   components: {
-    
   },
 
   data() {
@@ -186,12 +187,15 @@ export default {
   margin: 20px;
 
 }
+h1 {
+  margin: 40px;
+}
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  // margin: 20px;
 
   // padding: 100px;
 }
@@ -201,11 +205,11 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin: 20px;
+  margin: 60px;
   border-radius: 25px;
   box-shadow: 0px 6px 20px 0px  #ADB5BD;
-  background: url("../assets/neon.png") no-repeat center center;
-  width: 100%;
+  background: url("../assets/lightintro.png") no-repeat center center;
+  width: 90%;
   filter: brightness(90%);
 
 
@@ -215,6 +219,8 @@ export default {
 .dark .intro {
   box-shadow: 0px 6px 20px 0px  #E9ECEF;
   filter: brightness(90%);
+  background: url("../assets/1.png") no-repeat center center;
+
 
 }
 .image {
@@ -253,14 +259,18 @@ z-index: 1;
 
   
 }
-// .skill h5:hover {
-//   background: linear-gradient(-45deg, #42b883 10%, #35495e 50%, #42b883 90%);
-//   // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
-
-//   border-radius: 15px;
-//   margin: 10px;
-//   padding: 5px 0;
+// .skill:hover {
+//   width: 200px;
+//   height: 200px;
+//   // background: linear-gradient(-45deg, #42b883 10%, #35495e 50%, #42b883 90%);
+//   background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
+// // display: none;
+//   border-radius: 50%;
+//   // margin: 10px;
+//   // padding: 5px 0;
 // }
+
+
 .skills {
   text-align: center;
   display: flex;
@@ -270,10 +280,12 @@ z-index: 1;
   align-items: center;
   // justify-content: space-around;
   // border: solid 1px white;
+  border-radius: 25px;
+  box-shadow: 0px 6px 20px 0px  #ADB5BD;
 
-  width: 100%;
-  margin: 20px;
-  padding: 100px;
+  width: 90%;
+  margin: 60px;
+  // padding: 30px;
 }
 .tools {
   text-align: center;
@@ -308,7 +320,7 @@ padding: 20px;
 .fa-brands {
   font-size: 50px;
   // background: none;
-  margin: 0 20px;
+  margin: 20px;
   width: 120px;
   height: 120px;
   // background: #ADB5BD;
@@ -328,9 +340,20 @@ justify-content: center;
   // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   // box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
+// .skill {
+// background: #495057;
+// border-radius: 50%;
+// }
 .vue {
 color: #42b883;
 }
+// .skill h5 {
+//   display: none;
+// } 
+
+// .dark .skill h5 {
+//   display: contents;
+// }
 .vue:hover {
 color: #35495e;
 text-shadow: 10px 10px #42b883;
@@ -539,6 +562,8 @@ text-shadow: 10px 10px #1049d7;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
   // margin-bottom: 100px;
 }
 .image {
@@ -548,6 +573,7 @@ text-shadow: 10px 10px #1049d7;
 }
 .skills {
   padding: 0px;
+  width: 100%;
 }
 .tools {
   padding: 0px;

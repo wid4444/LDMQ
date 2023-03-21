@@ -50,7 +50,7 @@ export default {
     left: 0px;
     right: 0px;
     bottom: 0;
-    background: #8f07f7;
+    background: #AD00D8;
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -64,25 +64,27 @@ export default {
     left: 2px;
     bottom: 2px;
     right: 5px;
-
-    background: #FFF;
-    // background-image: "fa-solid fa-moon";
+    background: #43E8ED;
     -webkit-transition: .4s;
     transition: .4s;
-    
-
 }
 .dark .toggler:before {
-    background: rgb(0, 0, 0);
-//   background: url("../assets/1821-night-sky-moon-stars-outline\ \(1\).gif") no-repeat right;
+    // background: #80FFDB;
+    background: rgb(222,170,255);
+// background: radial-gradient(circle,  #c0fdff 0%, #4D194D 50%);
 
 }
+
 input:checked + .toggler {
-    // background: linear-gradient(-45deg, #ee04f6 10%, #04f8d7 50%, #8b10f6 90%);
-    background: rgb(20, 240, 57);
+    background: #72EFDD;
+
+    // border: solid 0.2px #80FFDB;
 }
 input:focus + .toggler {
-    box-shadow: 0 0 2px #721ef0;
+    box-shadow: 0 0 8px #80FFDB;
+}
+input:focus + .dark .toggler {
+    box-shadow: 0 0 8px #386641;
 }
 input:checked + .toggler:before {
     // SLIDING BUTTON This will change the distance the slider moves

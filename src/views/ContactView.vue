@@ -67,6 +67,9 @@ export default {
   
 
 }
+.container {
+  margin: 40px;
+}
 .contact h1 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -95,7 +98,7 @@ export default {
   // border: #ADB5BD solid 1px;
   border-radius: 10px;
   box-shadow: 0px 6px 20px 0px  #495057;
-  background: url("../assets/3d.png") no-repeat center center;
+  background: url("../assets/lightform1.png") no-repeat center center;
 
 
 }
@@ -103,6 +106,7 @@ export default {
   
   // border: #ADB5BD solid 1px;
   border-radius: 10px;
+  background: url("../assets/1.png") no-repeat center center;
   box-shadow: 0px 6px 20px 0px  #E9ECEF;
 
 }
@@ -113,27 +117,50 @@ export default {
 border-radius: 7px;
 margin: 5px;
 padding: 7px;
-background: #ADB5BD;
-color: #E9ECEF;
+background: transparent;
+color: #2d00f7;
 
 
 }
 .forma form textarea {
-  background: #ADB5BD;
-color: #E9ECEF;
-
+  background: transparent;
+color: #2d00f7;
 
 }
-// .dark .forma form input, textarea {
-// background: #CED4DA;
+.dark .forma form input {
+  color: #72EFDD;
+  border-bottom: solid 0.5px #00ffd5;
 
-// }
+}
+.dark .forma form textarea {
+  background: transparent;
+color: #72EFDD;
+border-bottom: solid 0.5px #00ffd5;
+
+}
 
 
 .forma button {
-  margin: 10px;
+  margin: 40px;
   padding: 5px 10px;
   border-radius: 10px;
+  box-shadow: 0 0 4px #9bf6ff;
+  border: solid 0.5px #9bf6ff;
+  background: #9bf6ff;
+  color: #bdb2ff;
+  font-weight: 400;
+  font-size: 25px;
+}
+.dark .forma button {
+  margin: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: transparent;
+color: #ADB5BD;
+font-weight: 100;
+  font-size: 25px;
+  box-shadow: 0 0 4px #72EFDD;
+
 }
 // END OF FORM
 .info {
@@ -185,12 +212,12 @@ color: #E9ECEF;
 }
 .github:hover {
   color: #E9ECEF;
-text-shadow: 5px 5px 5px #9D4EDD;
+text-shadow: 5px 5px 5px #7400B8;
 }
 
 .dark .github:hover {
   color: #E9ECEF;
-text-shadow: 5px 5px 5px #9D4EDD;
+text-shadow: 5px 5px 5px #7400B8;
 }
 .linkedin {
   color: #ADB5BD;
@@ -344,7 +371,7 @@ text-shadow: 5px 5px 5px green;
 
 .animate-charcter
 {
-   text-transform: uppercase;
+  //  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #4cc9f0 0%,
