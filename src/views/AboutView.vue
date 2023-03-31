@@ -11,34 +11,38 @@
     <img class="image" src="../assets/TechElevatorPic.jpeg" alt="">
 
     <p class="des">
-  Hi! My name is Leobardo but my family and friends call me <strong>Danny.</strong>  
-  When I was 14 years old I emigrated to the United States in search of the American Dream. 
-<br>
-<br>
-  I'm a Full Stack Java Software Developer based in Middletown, DE. 
-  I am bi-lingual and have over 10 years of experience in manufacturing. 
-  I am a self-taught artist and woodworker. 
-  I have volunteered at a nonprofit organization to paint murals around the city of Wilmington DE 
-  and collaborated with other groups on smaller projects. 
-  About three years ago I found a passion for woodworking, 
-  and since then I have created a number of projects like cabinets floating shelves, 
-  and even a small bar. With my attention to detail, creativity, and communication. 
-  I like to create responsive, and user-friendly application ideas. 
-  I am always interested in learning new languages and frameworks, improving my skills, 
-  and making a contribution to society.
-    </p>
-  </div>
-  </div>
+    Hi! My name is Leobardo but my family and friends call me <strong>Danny</strong>
+    . When I was 14 years old I immigrated to the United States in search of the American Dream. 
+  <br>
+  <br>
+    I'm a Jr. Full Stack Java Software Developer based in Middletown, DE. 
+    I am bi-lingual and have over 10 years of experience in manufacturing. 
+    I am a self-taught artist and woodworker.
+  <br>
+  <br>
+    I have volunteered at a nonprofit organization to paint murals around the city of Wilmington, DE. 
+    and collaborated with other groups on smaller projects. 
+  <br>
+  <br>
+    About three years ago I found a passion for woodworking, 
+    and since then I have created a number of projects like cabinets floating shelves, 
+    and even a small bar.
+  <br>
+  <br>
+   With my attention to detail, creativity, and communication. 
+    I like to create responsive, and user-friendly application ideas. 
+    I am always interested in learning new languages and frameworks, improving my skills, 
+    and making contributions to society.
+      </p>
+    </div>
+    </div>
 
 <h1>Skills</h1>
 
 <div class="skills">
 
 
-<div class="skill">
-  <i class="vue fa-brands fa-vuejs"></i>
-  <h5>Vue.js</h5>
-</div>
+
 
 <div class="skill">
   <i class="html fa-brands fa-html5"></i>
@@ -59,6 +63,11 @@
     <i class="java fa-brands fa-java"></i>
     <h5>Java</h5>
   </div>
+
+  <div class="skill">
+  <i class="vue fa-brands fa-vuejs"></i>
+  <h5>Vue.js</h5>
+</div>
 
     <div class="skill">
     <i class="sass fa-brands fa-sass"></i>
@@ -208,9 +217,13 @@ h1 {
   margin: 60px;
   border-radius: 25px;
   box-shadow: 0px 6px 20px 0px  #ADB5BD;
-  background: url("../assets/lightintro.png") no-repeat center center;
+  // background: url("../assets/lightintro.png") no-repeat center center;
+  // background: url("../assets/ballons1.png") no-repeat center center;
+  background: url("../assets/color1copy.png") no-repeat center center;
+
+
   width: 90%;
-  filter: brightness(90%);
+  // filter: brightness(95%);
 
 
 
@@ -238,6 +251,7 @@ z-index: 1;
   height: auto;
   color: #212529;
   font-weight: 600;
+  font-size: 20px;
 
   // -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	//         animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -269,8 +283,18 @@ z-index: 1;
 //   // margin: 10px;
 //   // padding: 5px 0;
 // }
+.des strong {
+  color: #38b000;
+  font-weight: 600;
 
+  // display: block;
+  // position: relative;
+  // padding: 0.2em 0;
 
+}
+.dark .des strong {
+  color: #f72585;
+}
 .skills {
   text-align: center;
   display: flex;
@@ -280,12 +304,18 @@ z-index: 1;
   align-items: center;
   // justify-content: space-around;
   // border: solid 1px white;
+  background: url("../assets/color1.png") no-repeat center center;
+
   border-radius: 25px;
   box-shadow: 0px 6px 20px 0px  #ADB5BD;
 
   width: 90%;
   margin: 60px;
-  // padding: 30px;
+  padding: 60px;
+}
+.dark .skills {
+  background: url("../assets/1.jpeg") no-repeat center center;
+
 }
 .tools {
   text-align: center;
@@ -344,27 +374,7 @@ justify-content: center;
 // background: #495057;
 // border-radius: 50%;
 // }
-.vue {
-color: #42b883;
-}
-// .skill h5 {
-//   display: none;
-// } 
 
-// .dark .skill h5 {
-//   display: contents;
-// }
-.vue:hover {
-color: #35495e;
-text-shadow: 10px 10px #42b883;
-}
-.dark .vue:hover {
-color: #CED4DA;
-text-shadow: 10px 10px #42b883;
-}
-// .vue h5 {
-// color: #42b883;
-// }
 
 
 .html  {
@@ -372,11 +382,11 @@ text-shadow: 10px 10px #42b883;
 }
 .html:hover  {
   color: #495057;
-text-shadow: 10px 10px #e34c26;
+text-shadow: 5px 5px #e34c26;
 }
 .dark .html:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #e34c26;
+text-shadow: 5px 5px #e34c26;
 }
 // .html h5 {
 //   color: #ebebeb;
@@ -394,11 +404,11 @@ text-shadow: 10px 10px #e34c26;
 }
 .css:hover  {
   color: #495057;
-text-shadow: 10px 10px #264de4;
+text-shadow: 5px 5px #264de4;
 }
 .dark .css:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #264de4;
+text-shadow: 5px 5px #264de4;
 }
 
 .js  {
@@ -406,11 +416,11 @@ text-shadow: 10px 10px #264de4;
 }
 .js:hover  {
   color: #495057;
-text-shadow: 10px 10px #F0DB4F;
+text-shadow: 5px 5px #F0DB4F;
 }
 .dark .js:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #F0DB4F;
+text-shadow: 5px 5px #F0DB4F;
 }
 
 .java  {
@@ -418,24 +428,34 @@ text-shadow: 10px 10px #F0DB4F;
 }
 .java:hover  {
   color: #495057;
-text-shadow: 10px 10px #e25052;
+text-shadow: 5px 5px #e25052;
 }
 .dark .java:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #e25052;
+text-shadow: 5px 5px #e25052;
 }
 
-
+.vue {
+color: #42b883;
+}
+.vue:hover {
+color: #35495e;
+text-shadow: 5px 5px #42b883;
+}
+.dark .vue:hover {
+color: #CED4DA;
+text-shadow: 5px 5px #42b883;
+}
 .sass  {
   color: #cc6699;
 }
 .sass:hover  {
   color: #495057;
-text-shadow: 10px 10px #cc6699;
+text-shadow: 5px 5px #cc6699;
 }
 .dark .sass:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #cc6699;
+text-shadow: 5px 5px #cc6699;
 }
 
 .python  {
@@ -443,11 +463,11 @@ text-shadow: 10px 10px #cc6699;
 }
 .python:hover  {
   color: #495057;
-text-shadow: 10px 10px #ffde57;
+text-shadow: 5px 5px #ffde57;
 }
 .dark .python:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #ffde57;
+text-shadow: 5px 5px #ffde57;
 }
 
 .git  {
@@ -455,11 +475,11 @@ text-shadow: 10px 10px #ffde57;
 }
 .git:hover  {
   color: #495057;
-text-shadow: 10px 10px #F1502F;
+text-shadow: 5px 5px #F1502F;
 }
 .dark .git:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #F1502F;
+text-shadow: 5px 5px #F1502F;
 }
 
 .gitlab  {
@@ -467,11 +487,11 @@ text-shadow: 10px 10px #F1502F;
 }
 .gitlab:hover  {
   color: #495057;
-text-shadow: 10px 10px #fca326;
+text-shadow: 5px 5px #fca326;
 }
 .dark .gitlab:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #fca326;
+text-shadow: 5px 5px #fca326;
 }
 
 .github  {
@@ -479,45 +499,37 @@ text-shadow: 10px 10px #fca326;
 }
 .github:hover  {
   color: #495057;
-text-shadow: 10px 10px #8c16cc;
+text-shadow: 5px 5px #8c16cc;
 }
 .dark .github:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #8c16cc;
+text-shadow: 5px 5px #8c16cc;
 }
 .react  {
   color: #61dbfb;
 }
 .react:hover  {
   color: #495057;
-text-shadow: 10px 10px #61dbfb;
+text-shadow: 5px 5px #61dbfb;
 }
 .dark .react:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #61dbfb;
+text-shadow: 5px 5px #61dbfb;
 }
 .swift  {
   color: #1049d7;
 }
 .swift:hover  {
   color: #495057;
-text-shadow: 10px 10px #1049d7;
+text-shadow: 5px 5px #1049d7;
 }
 .dark .swift:hover  {
   color: #CED4DA;
-text-shadow: 10px 10px #1049d7;
+text-shadow: 5px 5px #1049d7;
 }
 
 
-.des strong {
-  color: turquoise;
-  font-weight: 600;
 
-  // display: block;
-  // position: relative;
-  // padding: 0.2em 0;
-
-}
 
 
 .icon {

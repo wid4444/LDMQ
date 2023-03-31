@@ -4,7 +4,8 @@
     <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h3 class="animate-charcter">Contact Me</h3>
+      <!-- <h3 class="animate-charcter">Contact Me</h3> -->
+      <h1>Contact Me</h1>
     </div>
   </div>
 </div>
@@ -27,7 +28,7 @@
     <div class="info">
 
         <div class="resume">
-          <a class="button" href="../assets/Resume.pdf" target="_blank">My Resume</a>
+          <a class="button" href="https://drive.google.com/file/d/1XXk39qrQxdpRwdcjtTEEN1Qfb3noKc6o/view?usp=share_link" target="_blank">My Resume</a>
     </div>
 
       <div class="icons">
@@ -71,8 +72,9 @@ export default {
   margin: 40px;
 }
 .contact h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
+  margin: 40px;
 }
 .footer{
   margin: 20px;
@@ -118,13 +120,15 @@ border-radius: 7px;
 margin: 5px;
 padding: 7px;
 background: transparent;
-color: #2d00f7;
+color: #00b4d8;
+border-bottom: solid 0.5px #00b4d8;
 
 
 }
 .forma form textarea {
   background: transparent;
-color: #2d00f7;
+color: #00b4d8;
+border-bottom: solid 0.5px #00b4d8;
 
 }
 .dark .forma form input {
@@ -145,7 +149,7 @@ border-bottom: solid 0.5px #00ffd5;
   padding: 5px 10px;
   border-radius: 10px;
   box-shadow: 0 0 4px #9bf6ff;
-  border: solid 0.5px #9bf6ff;
+  border: solid 0.5px #00b4d8;
   background: #9bf6ff;
   color: #bdb2ff;
   font-weight: 400;

@@ -1,9 +1,9 @@
 <template>
   <div class="portfolio">
 
-    <h1 data-heading="I">Some Things I've Built</h1>
+    <!-- <h1 data-heading="I">Some Things I've Built</h1> -->
 
-    <!-- <h1>Some Things I've Built</h1> -->
+    <h1>Some Things I've Built</h1>
 
     <div class="projects">
 
@@ -21,7 +21,7 @@
         <!-- <img id="lopez-logo" src="../assets/my-work/Lopez2.png" alt=""> -->
       <!-- </a> -->
       <h4>Responsive Vue Website for a General Contractors Company</h4>
-        <img id="mock-up" src="../assets/my-work/soon.png" alt="">
+        <img id="mock-up" src="../assets/my-work/6.png" alt="">
       
     </div>
 
@@ -44,10 +44,10 @@ export default {
   align-items: center;
   
 }
-// .portfolio h1 {
-//   margin-top: 40px;
+.portfolio h1 {
+  margin-top: 40px;
   
-// }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -209,34 +209,34 @@ $outline: rgba(#ADB5BD, .4);
 //   height: 100%;
 // }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
+// h1 {
+//   font-family: 'Montserrat', sans-serif;
 
-  font-size: 40px;
-  text-align: center;
-  line-height: 1;
-  margin: 20px;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: $h1;
-  letter-spacing: 2px;
-  margin: 40px;
+//   font-size: 40px;
+//   text-align: center;
+//   line-height: 1;
+//   margin: 20px;
+//   top: 15%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   position: absolute;
+//   color: $h1;
+//   letter-spacing: 2px;
+//   margin: 40px;
   
-  &:before {
-    content: attr(data-heading);
-    position: absolute;
-    overflow: hidden;
-    color: $yellow;
-    width: 100%;
-    z-index: 5;
-    text-shadow: none;
-    left: 60.5%;
-    text-align: left;
-    animation: flicker 3s linear infinite;
-  }
-}
+//   &:before {
+//     content: attr(data-heading);
+//     position: absolute;
+//     overflow: hidden;
+//     color: $yellow;
+//     width: 100%;
+//     z-index: 5;
+//     text-shadow: none;
+//     left: 60.5%;
+//     text-align: left;
+//     animation: flicker 3s linear infinite;
+//   }
+// }
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {

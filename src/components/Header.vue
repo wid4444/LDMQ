@@ -87,21 +87,23 @@ components: {
    --fa-animation-timing: ease-in-out;
 }
 .dropdown-toggle {
-  background: #72CE27;
+  background: #F8049C;
 }
 .dropdown-toggle:hover {
   background: #95E214;
 }
+
 .dark .dropdown-toggle {
   background: #272640;
   // background: url("../assets/neon.png") no-repeat center center;
 
 }
+
 .dark .dropdown-toggle:hover {
   background: #312244;
 }
 .btn {
-  color: #f5009b;
+  color: #FDD54F;
 }
 .dark .btn {
   color: #80FFDB;
@@ -140,10 +142,10 @@ components: {
     margin: 0px 20px;
     padding: 10px;
 }
-.toggle {
-  // margin-right: 40px;
+// .toggle {
+//   // margin-right: 40px;
   
-}
+// }
 
 * {
   // font-family: 'Montserrat', sans-serif;
@@ -246,14 +248,18 @@ border-radius: 6px;
   
 
   .dropdown-menu {
-    $dropdown-dark-link-disabled-color: #0B525B;
+    $dropdown-dark-link-disabled-color: red;
     // $dropdown-color: var(--#ADB5BD body-color);
-    // background: #144552;
-    background: linear-gradient(0deg, rgba(123,241,168,1) 0%, rgba(193,251,164,1) 25%, rgba(255,239,159,1) 50%, rgba(255,214,224,1) 75%, rgba(144,241,239,1) 100%);
+    // background: #80ffdb;
+    background: linear-gradient(180deg, rgba(192,253,255,1) 0%, rgba(222,170,255,1) 100%);
+    // background: linear-gradient(0deg, rgba(123,241,168,1) 0%, rgba(193,251,164,1) 25%, rgba(255,239,159,1) 50%, rgba(255,214,224,1) 75%, rgba(144,241,239,1) 100%);
+    // background: url("../assets/ballons.png") no-repeat center center;
 
     padding: 0;
   }
 .dark .dropdown-menu { 
+  $dropdown-dark-link-disabled-color: #0B525B;
+
   background: linear-gradient( rgba(49,34,68,1) 0%, rgba(33,47,69,1) 39%, rgba(27,58,75,1) 61%, rgba(11,82,91,1) 100%);
 
 }
@@ -269,11 +275,13 @@ border-radius: 6px;
   margin: 20px;
 }
 .dropdown-menu .nav-link:hover {
-  color: #BE0AFF;
+  color: #F8049C;
+  font-weight: 600;
+
   // background: #ADB5BD;
   margin: 20px;
   border-radius: 5px;
-// border: 1px solid #9D4EDD;
+border-bottom: 1px solid #9D4EDD;
 margin: 20px;
 }
 .dark .dropdown-menu .nav-link {
@@ -287,6 +295,8 @@ margin: 20px;
   // background: #ADB5BD;
   margin: 0px 25px;
   border-radius: 5px;
+border-bottom: none;
+
   // border: 0.5px solid #70E000;
   margin: 20px;
 }
