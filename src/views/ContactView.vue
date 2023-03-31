@@ -1,14 +1,14 @@
 <template>
   <div class="contact">
 
-    <div class="container">
+    <!-- <div class="container">
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-center"> -->
       <!-- <h3 class="animate-charcter">Contact Me</h3> -->
       <h1>Contact Me</h1>
-    </div>
-  </div>
-</div>
+    <!-- </div>
+  </div> -->
+<!-- </div> -->
 
     <!-- <h1>Contact Me</h1> -->
 
@@ -39,9 +39,9 @@
     <a href="https://www.linkedin.com/in/leobardo-martinez/">
         <i class="linkedin fa-brands fa-linkedin fa-bounce"></i>
       </a>
-    <a href="https://codepen.io/wid4444">
+    <!-- <a href="https://codepen.io/wid4444">
         <i class="codepen fa-brands fa-codepen fa-bounce"></i>
-      </a>
+      </a> -->
 
       </div>
 
@@ -69,7 +69,7 @@ export default {
 
 }
 .container {
-  margin: 40px;
+  // margin: 40px;
 }
 .contact h1 {
   // margin-top: 50px;
@@ -77,7 +77,7 @@ export default {
   margin: 40px;
 }
 .footer{
-  margin: 20px;
+  // margin: 40px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -89,7 +89,7 @@ export default {
 }
 //BEGINNING OF FORM
 .forma form{
-  margin: 20px;
+  margin: 40px;
   padding: 30px;
   width: 600px;
   text-align: center;
@@ -216,12 +216,12 @@ font-weight: 100;
 }
 .github:hover {
   color: #E9ECEF;
-text-shadow: 5px 5px 5px #7400B8;
+text-shadow: 5px 5px 5px #5a189a;
 }
 
 .dark .github:hover {
   color: #E9ECEF;
-text-shadow: 5px 5px 5px #7400B8;
+text-shadow: 5px 5px 5px #9d4edd;
 }
 .linkedin {
   color: #ADB5BD;
@@ -229,6 +229,11 @@ text-shadow: 5px 5px 5px #7400B8;
 .linkedin:hover {
 color: #E9ECEF;
 text-shadow: 5px 5px 5px  blue;
+
+}
+.dark .linkedin:hover {
+color: #E9ECEF;
+text-shadow: 5px 5px 5px  #00b4d8;
 
 }
 .codepen {
@@ -329,14 +334,27 @@ text-shadow: 5px 5px 5px green;
   top: 0;
   border-radius: 10px;
 }
+@media screen and (max-width:1200px) {
+  .footer{
+  margin: 20px;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+
+}
+}
 @media screen and (max-width:700px) {
 
   .contact h1 {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin: 60px 0 0 0;
+  // margin-bottom: 20px;
 }
   .footer{
-  margin: 20px;
+    margin: 60px 0 0 0;
   width: 80%;
   text-align: center;
   display: flex;
@@ -373,32 +391,32 @@ text-shadow: 5px 5px 5px green;
 
 
 
-.animate-charcter
-{
-  //  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #4cc9f0 0%,
-    #3f37c9 29%,
-    #560bad 67%,
-    #f72585 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 50px;
-}
+// .animate-charcter
+// {
+//   //  text-transform: uppercase;
+//   background-image: linear-gradient(
+//     -225deg,
+//     #4cc9f0 0%,
+//     #3f37c9 29%,
+//     #560bad 67%,
+//     #f72585 100%
+//   );
+//   background-size: auto auto;
+//   background-clip: border-box;
+//   background-size: 200% auto;
+//   color: #fff;
+//   background-clip: text;
+//   text-fill-color: transparent;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   animation: textclip 2s linear infinite;
+//   display: inline-block;
+//       font-size: 50px;
+// }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
+// @keyframes textclip {
+//   to {
+//     background-position: 200% center;
+//   }
+// }
 </style>

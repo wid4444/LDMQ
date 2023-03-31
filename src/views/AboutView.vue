@@ -193,7 +193,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  // margin: 20px;
 
 }
 h1 {
@@ -204,7 +204,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin: 20px;
+  // margin: 40px;
 
   // padding: 100px;
 }
@@ -214,12 +214,12 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin: 60px;
+  margin: 40px;
   border-radius: 25px;
   box-shadow: 0px 6px 20px 0px  #ADB5BD;
   // background: url("../assets/lightintro.png") no-repeat center center;
   // background: url("../assets/ballons1.png") no-repeat center center;
-  background: url("../assets/color1copy.png") no-repeat center center;
+  background: url("../assets/color1copy.png") no-repeat left center;
 
 
   width: 90%;
@@ -569,15 +569,19 @@ text-shadow: 5px 5px #1049d7;
 }
 
 @media screen and (max-width:700px) {
+  h1 {
+  margin: 60px 0 0 0;
+}
   .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
 
-  // margin-bottom: 100px;
+  margin: 60px 0 0 0;
 }
+
 .image {
   width: 300px;
   padding: 20px;
@@ -585,7 +589,7 @@ text-shadow: 5px 5px #1049d7;
 }
 .skills {
   padding: 0px;
-  width: 100%;
+  width: 90%;
 }
 .tools {
   padding: 0px;

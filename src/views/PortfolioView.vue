@@ -45,7 +45,7 @@ export default {
   
 }
 .portfolio h1 {
-  margin-top: 40px;
+  margin:  40px;
   
 }
 .projects {
@@ -54,7 +54,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 1280px;
-  margin: 120px 80px 80px 80px;
+  margin: 40px;
   top: 60%;
   padding: 40px;
 border-radius: 20px;
@@ -144,7 +144,7 @@ background: url("../assets/projects1.jpeg") no-repeat center center;
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin: 120px 80px 80px 80px;
+  // margin: 120px 80px 80px 80px;
 
   padding: 20px;
 border-radius: 20px;
@@ -164,13 +164,16 @@ box-shadow: 0px 6px 20px 0px  #495057;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  // margin: 20px;
+  width: 450px;
+  margin: 60px 0 0 0;
   padding: 20px;
 border-radius: 20px;
 box-shadow: 0px 6px 20px 0px  #495057;
 
 
+}
+.portfolio h1 {
+  margin: 60px 0 0 0;
 }
    h4 {
     font-size: 18px;
@@ -197,10 +200,10 @@ box-shadow: 0px 6px 20px 0px  #495057;
 
 
 
-$h1:  #ADB5BD;
-$blue: #98b5cc;
-$yellow: #bc00dd;
-$outline: rgba(#ADB5BD, .4);
+// $h1:  #ADB5BD;
+// $blue: #98b5cc;
+// $yellow: #bc00dd;
+// $outline: rgba(#ADB5BD, .4);
 // $shadow: rgba($yellow, .2);
 // html,
 // body {
@@ -238,16 +241,16 @@ $outline: rgba(#ADB5BD, .4);
 //   }
 // }
 
-@keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    opacity: .99;
-    text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 2px #9900ff, 0 0 4px #d744ff, 0 0 2px #9900ff, 0 2px 3px #000;
-  }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    opacity: 0.4;
-    text-shadow: none;
-  }
-}
+// @keyframes flicker {
+//   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+//     opacity: .99;
+//     text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 2px #9900ff, 0 0 4px #d744ff, 0 0 2px #9900ff, 0 2px 3px #000;
+//   }
+//   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+//     opacity: 0.4;
+//     text-shadow: none;
+//   }
+// }
 
 /*
  * Webfont: CoreCircus by S-Core
@@ -261,15 +264,15 @@ $outline: rgba(#ADB5BD, .4);
  * Licensed pageviews: 10,000
 */
 
-@font-face {
-  font-family: 'CoreCircus2DDot1';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'CoreCircus2DDot1';
+//   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+//   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'CoreCircus';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'CoreCircus';
+//   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+//   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+// }
 </style>
