@@ -37,30 +37,30 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
+  width: 70%;
   height: 30%;
   background-image: radial-gradient(
-    ellipse 30% 30% at 30% 50%,
-    // #791c7e,
-    #80ffdb,
+    ellipse 22% 25% at 30% 50%,
+    #791c7e,
+    // #80ffdb,
     transparent
   );
   transform: translate(-50%, -50%);
   letter-spacing: 2;
-  left: 50%;
-  top: 50%;
+  left: 40%;
+  top: 10%;
   font-family: "Clip";
-  text-transform: uppercase;
-  font-size: 65px;
+  // text-transform: uppercase;
+  font-size: 80px;
   color: #ffe6ff;
 
   // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
   //   -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
   //   0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
 
-  // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
-  //   -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
-  //   0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
+    -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
+    0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
 
   animation: shine 2s forwards, flicker 3s infinite;
 }
@@ -73,25 +73,25 @@ body {
   75% {
     color: #ffe6ff;
 
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #80ffdb,
-      -0.2rem 0.1rem 1rem #80ffdb, 0.2rem 0.1rem 1rem #80ffdb,
-      0 -0.5rem 2rem #00b4d8, 0 0.5rem 3rem #00b4d8;
+    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #80ffdb,
+    //   -0.2rem 0.1rem 1rem #80ffdb, 0.2rem 0.1rem 1rem #80ffdb,
+    //   0 -0.5rem 2rem #00b4d8, 0 0.5rem 3rem #00b4d8;
 
-    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
-    // -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
-    // 0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
+    -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
+    0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
   }
   28%,
   33% {
-    // color: #ab51e3;
-    color: #00b4d8;
+    color: #ab51e3;
+    // color: #00b4d8;
 
     text-shadow: none;
   }
   82%,
   97% {
-    // color: #8b2fc9;
-    color: #00b4d8;
+    color: #8b2fc9;
+    // color: #00b4d8;
 
     text-shadow: none;
   }
@@ -116,17 +116,17 @@ body {
   100% {
     color: #ffe6ff;
 
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #80ffdb,
-      -0.2rem 0.1rem 1rem #80ffdb, 0.2rem 0.1rem 1rem #80ffdb,
-      0 -0.5rem 2rem #00b4d8, 0 0.5rem 3rem #00b4d8;
+    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #80ffdb,
+    //   -0.2rem 0.1rem 1rem #80ffdb, 0.2rem 0.1rem 1rem #80ffdb,
+    //   0 -0.5rem 2rem #00b4d8, 0 0.5rem 3rem #00b4d8;
     
     // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     //   -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     //   0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
 
-    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
-    // -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
-    // 0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ab51e3,
+    -0.2rem 0.1rem 1rem #ab51e3, 0.2rem 0.1rem 1rem #ab51e3,
+    0 -0.5rem 2rem #8b2fc9, 0 0.5rem 3rem #8b2fc9;
   }
 }
 
@@ -257,7 +257,7 @@ body {
 }
 @media screen and (max-width:1200px) {
     .sign {
-  font-size: 37px;
+  font-size: 50px;
     }
 }
 
@@ -273,10 +273,10 @@ body {
     #791c7e,
     transparent
   );
-  left: 50%;
-  top: 50%;
+  left: 60%;
+  top: 65%;
 
-  font-size: 26px;
+  font-size: 35px;
    animation: shine 2s forwards, flicker 3s infinite;
 }
 }

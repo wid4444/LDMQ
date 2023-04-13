@@ -52,15 +52,15 @@ export default {
 .pic {
   width: 100%;
   // Height needs to be change when cell phone sizing !important
-  height: 800px;  
-  background: url("../assets/LDM3.JPG") no-repeat center center;
+  height: 1000px;  
+  background: url("../assets/home/1.png") no-repeat center center;
   background-size: 100% auto;
   margin: 20px;
   border-radius: 5px;
   margin-bottom: 200px;
 }
 .dark .pic {
-  background: url("../assets/LDM4.JPG") no-repeat center center;
+  background: url("../assets/home/dark1.png") no-repeat center center;
   background-size: 100% auto;
 
   // background-attachment: local;
@@ -89,11 +89,18 @@ export default {
   .pic {
   width: 100%;
   // Height needs to be change when cell phone sizing !important
-  height: 350px;  
-  // background: url("../assets/LDM3.JPG") no-repeat right;
+  // height: 750px;  
+  background: url("../assets/home/1c.png") no-repeat center center;
   background-size: 100% auto;
   margin: 20px;
   // border-radius: 5px;
+}
+.dark .pic {
+  width: 100%;
+
+  background: url("../assets/home/dark1c.png") no-repeat center center;
+  background-size: 100% auto;
+  margin: 20px;
 }
   .title {
       height: 620px;

@@ -12,9 +12,9 @@ export default {
 <style scoped lang="scss">
 
 .hi {
-color: #64dfdf;
+color: #F8049C;
 font-weight: 600;
- top: -200px;
+ top: -350px;
  font-size: 30px;
 // Start of the underline
 display: block;
@@ -62,7 +62,7 @@ display: block;
     }
 // End of the underline in Light mode
 .dark .hi {
-  color: #DEE2E6;
+  color: #ADB5BD;
   font-weight: 600;
 // Start of the underline
   display: block;
@@ -133,12 +133,12 @@ display: block;
       transform: translate3d(0, 0, 0);
     }
     @media screen and (max-width:1200px) { 
-      .hi {
- font-size: 25px;
- top: -180px;
+//       .hi {
+//  font-size: 25px;
+//  top: -180px;
 
-margin-left: 130px;
-      }
+// margin-left: 130px;
+//       }
 
     }
 
@@ -146,9 +146,9 @@ margin-left: 130px;
       .hi {
 // color: #DEE2E6;
 // font-weight: 600;
- top: -100px;
- left: 30px;
-//  font-size: 30px;
+ top: -110px;
+ margin-left: 160px;
+ font-size: 20px;
 // Start of the underline
 // display: block;
 //   position: relative;
@@ -156,6 +156,9 @@ margin-left: 130px;
 //   margin-left: 100px;
 
 //   overflow: hidden;
+}
+.dark .hi {
+  color: #F8049C;
 }
     }
 </style>

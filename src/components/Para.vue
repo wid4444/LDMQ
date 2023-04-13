@@ -33,20 +33,20 @@ export default {
 .wordCarousel {
     font-size: 36px;
     font-weight: 100;
-    color: #eee;
-    margin: 0 0px 140px 180px;
+    color: #72CE27;
+    margin: 0 0px 300px 70px;
     div {
         overflow: hidden;
         position: relative;
         float: right;
-        height: 75px;
+        height: 55px;
         padding-top: 0px;
         margin-top: 0px;
          li {
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
-            color: #FF9900;
-    text-shadow: 0 0 6px #FF9900;
+            color: #FDD54F;
+    text-shadow: 0 0 6px #FDD54F;
             font-weight: 700;
             padding: 0 10px;
             height: 45px;
@@ -58,6 +58,11 @@ export default {
     // text-shadow: 0 0 6px #FF9900;
     //     } 
     }
+}
+
+
+.dark .wordCarousel {
+    color: #ADB5BD;
 }
 .dark .wordCarousel div li {
     text-shadow: 0 0 6px #80ffdb;
@@ -152,18 +157,19 @@ body {
 }
 @media screen and (max-width:1200px) { 
 .wordCarousel {
-    font-size: 22px;
-    margin: 0 0px 130px 40px;
+    font-size: 28px;
+    // margin: 0 0px 130px 40px;
 
-}
+} 
 
       
 
     }
  @media screen and (max-width:700px) {
      .wordCarousel {
-    font-size: 15px;
-    margin: 0 0px 180px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0px 100px 0px;
 
     }
     li {
@@ -177,5 +183,8 @@ body {
             margin-bottom: 75px;
             // display: block;
         }
+ }
+ .dark .wordCarousel {
+    color: #72CE27;
  }
 </style>

@@ -17,6 +17,10 @@
 <div class="forma">
 
 <form action="https://formsubmit.co/ldmartinezquiroz@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
+  <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+
   <input type="text" name="name" id="name" placeholder="Name" required>
   <input type="email" name="email" id="email" placeholder="Email" required>
   <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" required></textarea>

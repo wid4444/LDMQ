@@ -8,7 +8,7 @@
 
     <div class="intro">
 
-    <img class="image" src="../assets/TechElevatorPic.jpeg" alt="">
+    <img class="image" src="../assets/Professional.png" alt="">
 
     <p class="des">
     Hi! My name is Leobardo but my family and friends call me <strong>Danny</strong>
@@ -237,7 +237,7 @@ h1 {
 
 }
 .image {
-  width: 400px;
+  width: 600px;
 border-radius: 50%;
 z-index: 1;
 }
