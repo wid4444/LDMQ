@@ -329,19 +329,7 @@ body {
 
 //     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #c77dff,
 //     -0.2rem 0.1rem 1rem #c77dff, 0.2rem 0.1rem 1rem #c77dff,
-//     0 -0.5rem 2rem #7b2cbf, 0 0.5rem 3rem #7b2cbf;
-//   }
-//   28%,
-//   33% {
-//     color: #c77dff;
-//     text-shadow: none;
-//   }
-//   82%,
-//   97% {
-//     color: #7b2cbf;
-//     text-shadow: none;
-//   }
-// }
+//     0 -0.5rem 2rem #7b2cbf, 0 0.5rem 3rem #7b2cb
 
 // .flicker {
 //   animation: shine 2s forwards, blink 3s 2s infinite;
