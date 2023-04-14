@@ -1,5 +1,5 @@
 <template>
-    <div class="hi">Hola! Yo soy</div>
+    <div class="hi">Hi! My name is</div>
   
 </template>
 
@@ -147,9 +147,11 @@ display: block;
 // color: #DEE2E6;
 // font-weight: 600;
 
- top: -70px;
+ top: -45px;
  margin-left: 130px;
  font-size: 20px;
+ color: #43E8ED;
+  // outline: #7a00ff;
 // Start of the underline
 // display: block;
 //   position: relative;
@@ -159,7 +161,10 @@ display: block;
 //   overflow: hidden;
 }
 .dark .hi {
+ top: -40px;
+
   color: #F8049C;
+  // outline: #7a00ff;
 }
     }
 </style>

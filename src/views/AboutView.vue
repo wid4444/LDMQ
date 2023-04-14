@@ -25,11 +25,11 @@
   <br>
   <br>
     About three years ago I found a passion for woodworking, 
-    and since then I have created a number of projects like cabinets floating shelves, 
+    and since then I have created a number of projects like cabinets, floating shelves, 
     and even a small bar.
   <br>
   <br>
-   With my attention to detail, creativity, and communication. 
+   With my attention to detail, creativity, and communication 
     I like to create responsive, and user-friendly application ideas. 
     I am always interested in learning new languages and frameworks, improving my skills, 
     and making contributions to society.

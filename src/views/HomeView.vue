@@ -89,7 +89,7 @@ export default {
   .pic {
   width: 100%;
   // Height needs to be change when cell phone sizing !important
-  height: 450px;  
+  height: 400px;  
   background: url("../assets/home/1c.png") no-repeat center center;
   background-size: 100% auto;
   margin: 20px;

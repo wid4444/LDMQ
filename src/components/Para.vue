@@ -45,8 +45,8 @@ export default {
          li {
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
-            color: #FDD54F;
-    text-shadow: 0 0 6px #FDD54F;
+            color: #F8049C;
+    text-shadow: 0 0 6px #F8049C;
             font-weight: 700;
             padding: 0 10px;
             height: 45px;
