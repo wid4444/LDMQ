@@ -8,7 +8,7 @@
     <div class="projects">
 
     <div class="project">
-      <a href="https://www.avi-it.org/">
+      <a href="https://www.avi-it.org/" target="_blank">
         <img id="avi-logo" src="../assets/my-work/logo.jpg" alt="">
       </a>
       <h4>Responsive Vue Website for a Non-profit Organization</h4>
@@ -16,7 +16,7 @@
       
     </div>
 <div class="project">
-      <!-- <a href="https://www.avi-it.org/"> -->
+      <!-- <a href="https://www.avi-it.org/" target="_blank"> -->
         <img id="lopez-logo" src="../assets/my-work/Lopez.png" alt="">
         <!-- <img id="lopez-logo" src="../assets/my-work/Lopez2.png" alt=""> -->
       <!-- </a> -->
