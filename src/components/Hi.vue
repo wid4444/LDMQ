@@ -147,7 +147,7 @@ display: block;
 // color: #DEE2E6;
 // font-weight: 600;
 
- top: -110px;
+ top: -90px;
  margin-left: 130px;
  font-size: 20px;
 // Start of the underline

@@ -169,7 +169,7 @@ body {
      .wordCarousel {
     font-size: 16px;
     font-weight: 600;
-    margin: 0 0px 100px 0px;
+    margin: 0 0px 110px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
