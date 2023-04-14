@@ -34,7 +34,7 @@ export default {
     font-size: 36px;
     font-weight: 100;
     color: #72CE27;
-    margin: 0 0px 300px 70px;
+    margin: 0 0px 370px 70px;
     div {
         overflow: hidden;
         position: relative;

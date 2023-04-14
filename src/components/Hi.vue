@@ -14,7 +14,7 @@ export default {
 .hi {
 color: #F8049C;
 font-weight: 600;
- top: -350px;
+ top: -230px;
  font-size: 30px;
 // Start of the underline
 display: block;
