@@ -60,7 +60,7 @@ export default {
   margin-bottom: 200px;
 }
 .dark .pic {
-  background: url("../assets/home/dark1.png") no-repeat center center;
+  background: url("../assets/home/dark2.png") no-repeat center center;
   background-size: 100% auto;
 
   // background-attachment: local;
@@ -98,7 +98,7 @@ export default {
 .dark .pic {
   width: 100%;
 
-  background: url("../assets/home/dark1c.png") no-repeat center center;
+  background: url("../assets/home/dark2c.png") no-repeat center center;
   background-size: 100% auto;
   margin: 20px;
 }
