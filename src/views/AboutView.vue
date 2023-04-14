@@ -250,7 +250,7 @@ z-index: 1;
   width: 100%;
   height: auto;
   color: #212529;
-  font-weight: 600;
+  // font-weight: 600;
   font-size: 20px;
 
   // -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -596,6 +596,8 @@ text-shadow: 5px 5px #1049d7;
 }
 .des {
   text-align: center;
+  font-size: 12px;
+  font-weight: none;
 }
 }
 
