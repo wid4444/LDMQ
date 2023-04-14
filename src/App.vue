@@ -21,7 +21,7 @@ export default {
   name: 'app',
   data () {
     return {
-      mode: 'light'
+      mode: 'dark'
     }
   },
   components: {
@@ -34,11 +34,11 @@ export default {
   },
 
   methods: {
-    keyPress (e) {
-      if (e.key === 'd') {
-        this.toggle()
-      }
-    },
+    // keyPress (e) {
+    //   if (e.key === 'd') {
+    //     this.toggle()
+    //   }
+    // },
 
     toggle () {
       if (this.mode === "dark") {

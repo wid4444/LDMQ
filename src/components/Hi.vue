@@ -12,7 +12,7 @@ export default {
 <style scoped lang="scss">
 
 .hi {
-color: #F8049C;
+color: #43E8ED;
 font-weight: 600;
  top: -230px;
  font-size: 30px;
@@ -62,7 +62,7 @@ display: block;
     }
 // End of the underline in Light mode
 .dark .hi {
-  color: #ADB5BD;
+  color: #F8049C;
   font-weight: 600;
 // Start of the underline
   display: block;
