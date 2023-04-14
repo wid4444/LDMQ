@@ -251,6 +251,8 @@ border-radius: 6px;
     $dropdown-dark-link-disabled-color: red;
     // $dropdown-color: var(--#ADB5BD body-color);
     // background: #80ffdb;
+    // background: #b9fbc0;
+
     background: linear-gradient(180deg, rgba(192,253,255,1) 0%, rgba(222,170,255,1) 100%);
     // background: linear-gradient(0deg, rgba(123,241,168,1) 0%, rgba(193,251,164,1) 25%, rgba(255,239,159,1) 50%, rgba(255,214,224,1) 75%, rgba(144,241,239,1) 100%);
     // background: url("../assets/ballons.png") no-repeat center center;
