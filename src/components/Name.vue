@@ -273,7 +273,7 @@ body {
     #791c7e,
     transparent
   );
-  left: 50%;
+  left: 60%;
   top: 65%;
 
   font-size: 30px;
