@@ -167,10 +167,11 @@ body {
     }
  @media screen and (max-width:700px) {
      .wordCarousel {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0 0px 100px 0px;
-
+    display: flex;
+flex-wrap: wrap;
     }
     li {
             // font-family: 'Montserrat', sans-serif;

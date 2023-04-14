@@ -579,7 +579,7 @@ text-shadow: 5px 5px #1049d7;
   align-items: center;
   width: 90%;
 
-  margin: 60px 0 0 0;
+  margin: 60px 0px 0 0px;
 }
 
 .image {
