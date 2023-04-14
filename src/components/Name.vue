@@ -276,7 +276,7 @@ body {
   left: 50%;
   top: 65%;
 
-  font-size: 35px;
+  font-size: 30px;
    animation: shine 2s forwards, flicker 3s infinite;
 }
 }
