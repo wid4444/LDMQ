@@ -32,7 +32,7 @@
     <div class="info">
 
         <div class="resume">
-          <a class="button" href="https://drive.google.com/file/d/1BSBXhPhBDsD6IS1Xnq2NLPhDIOb0gGDY/view?usp=share_link" target="_blank">My Resume</a>
+          <a class="button" href="https://docs.google.com/document/d/11TdOIKU6FDGqYU4xHdSZz22D72ondlr2ixmKI8N2wuA/edit?usp=sharing" target="_blank">My Resume</a>
     </div>
 
       <div class="icons">
